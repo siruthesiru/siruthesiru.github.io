@@ -8,10 +8,10 @@ sticky: true
 hidden: true
 ---
 
-<img src="/assets/pics/sb.webp" alt="Spirit Breaker" width="100%"/>
-
 In video games, when a character has a 10% chance to trigger an effect during a certain action, then you would expect that
 event to occur at least once in 10 attempts. However with true random number generation, that isn't quite how it works. <!--more-->
+
+<img src="/assets/pics/sb.webp" alt="Spirit Breaker" width="100%"/>
 
 ```c
 #include <stdio.h>
