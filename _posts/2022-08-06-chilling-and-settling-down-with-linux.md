@@ -33,3 +33,5 @@ Defeated, I had no choice but to look up *free Windows alternative* and there it
 ![Ubuntu 16.04](/assets/pics/buntu.webp)
 *Ubuntu 16.04 Xenial Xerus*
 <br>
+
+It was the first time I've ever seen an operating system besides Windows 7 and below.
