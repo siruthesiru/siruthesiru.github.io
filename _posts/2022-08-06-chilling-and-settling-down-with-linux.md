@@ -2,8 +2,7 @@
 title: 'Chilling and Settling Down with Linux'
 layout: post
 comments: false
-tags:
-- Stories
+tags: Stories
 excerpt_separator: "<!--more-->"
 sticky: false
 published: true

@@ -2,8 +2,7 @@
 title: 'Study Buddies: Utilizing OpenAI for Programming Studies'
 layout: post
 comments: false
-tags:
-- Academics
+tags: Academics
 excerpt_separator: "<!--more-->"
 sticky: false
 ---
