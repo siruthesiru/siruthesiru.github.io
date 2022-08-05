@@ -30,6 +30,8 @@ Synthesia fiasco, pirating a copy was *100%* off the table.
 Defeated, I had no choice but to look up *free Windows alternative* and there it was. 
 
 <br>
+
 ![Ubuntu 16.04](/assets/pics/buntu.webp)
 *Ubuntu 16.04 Xenial Xerus*
+
 <br>
