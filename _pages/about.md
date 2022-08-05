@@ -5,13 +5,14 @@ title: "About"
 permalink: /about/
 ---
 
-![Profile Picture](/assets/profilepic.png)
+![Profile Picture](/assets/pics/profilepic.png)
 
-I do not look like the 
+I do not actually have sclera white skin so the little picture above this introduction may be mislead but I definitely
+am **Sirutonin**! Hello!
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+Having lots of thoughts and stories with not a lot of people to share with, I decided to create this blog
+and will try to add to it as much as possible.
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
+Hope you have fun!
 
-Thanks for reading!
+Check me out on [Github](https://github.com/siruthesiru), [Twitter](https://twitter.com), or e-mail me at <sirutonin@gmail.com>.
