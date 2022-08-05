@@ -2,8 +2,7 @@
 title: Markdown Guide
 layout: post
 author: Chester
-tags:
-- Guides
+tags: Guides
 excerpt_separator: "<!--more-->"
 ---
 
