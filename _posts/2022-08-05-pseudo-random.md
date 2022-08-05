@@ -1,7 +1,7 @@
 ---
 title: Pseudo Random in Dota 2
 layout: post
-comments: true
+comments: false
 tags: Dota2
 excerpt_separator: "<!--more-->"
 sticky: true

@@ -4,8 +4,8 @@ layout: post
 comments: false
 tags:
 - Stories
-  excerpt_separator: "<!--more-->"
-  sticky: false
+excerpt_separator: "<!--more-->"
+sticky: false
 ---
 
 Back in 2016, I had accidentally destroyed my laptop's Windows 7 installation by downloading and installing a malware-ridden copy
