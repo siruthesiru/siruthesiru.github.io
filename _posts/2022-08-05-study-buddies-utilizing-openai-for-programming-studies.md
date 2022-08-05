@@ -12,7 +12,12 @@ As I go through uni, I've noticed that a lot of my classmates seem to struggle w
 
 After multiple discussions and group-studying sessions, I've come to the conclusion that it's mostly due to the fact that they don't have samples of code to base their studies on. That's where OpenAI comes into play.
 
-<img src="/assets/pics/ai.webp" alt="OpenAI Generating Code from Instructions" width="100%"/>
+<br>
+
+![OpenAI](/assets/pics/ai.webp)
+*OpenAI working with instructions*
+
+<br>
 
 # Getting Sample Code from OpenAI
 

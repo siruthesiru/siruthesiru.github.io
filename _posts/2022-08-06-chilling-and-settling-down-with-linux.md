@@ -1,11 +1,12 @@
 ---
-title: Chilling and Settling Down with Linux
+title: 'Chilling and Settling Down with Linux'
 layout: post
 comments: false
 tags:
 - Stories
 excerpt_separator: "<!--more-->"
 sticky: false
+published: true
 ---
 
 Back in 2016, I had accidentally destroyed my laptop's Windows 7 installation by downloading and installing a malware-ridden copy
