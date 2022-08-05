@@ -5,9 +5,9 @@
   {% seo %}
 
   <!-- CSS -->
-<!--  <link rel="preload" href="/assets/main.css" as="style">-->
-  <link rel="preload" href="/assets/robotoSlab.css" as="font">
-  <link rel="preload" href="/assets/jetBrains.css" as="font">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="preload" as="font" href="{{ "/assets/robotoSlab.css" | relative_url }}">
+  <link rel="preload" as="font" href="{{ "/assets/jetBrains.css" | relative_url }}">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon-32x32.png" | relative_url }}">
