@@ -5,7 +5,7 @@ title: "About"
 permalink: /about/
 ---
 
-![Profile Picture](/assets/pics/profilepic.png)
+![Profile Picture](/assets/pics/profilepic.webp)
 
 I do not actually have sclera white skin so the little picture above this introduction may be mislead but I definitely
 am **Sirutonin**! Hello!

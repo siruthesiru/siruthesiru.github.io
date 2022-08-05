@@ -8,9 +8,9 @@ excerpt_separator: "<!--more-->"
 sticky: false
 ---
 
-As I go through uni, I've noticed that a lot of my classmates seem to struggle when it comes to preparing for exams that include writing actual code especially for the language C. 
+As I go through uni, I've noticed that a lot of my classmates seem to struggle when it comes to preparing for exams that include writing actual code especially for the language C. <!--more-->
 
-After multiple discussions and group-studying sessions, I've come to the conclusion that<!--more--> it's mostly due to the fact that they don't have samples of code to base their studies on. That's where OpenAI comes into play.
+After multiple discussions and group-studying sessions, I've come to the conclusion that it's mostly due to the fact that they don't have samples of code to base their studies on. That's where OpenAI comes into play.
 
 <img src="/assets/pics/ai.webp" alt="OpenAI Generating Code from Instructions" width="100%"/>
 
@@ -61,6 +61,8 @@ void insertNode(List* head, char data)
 ```
 
 As you can see, OpenAI was able to generate the function's code with the provided instructions.
+
+# Interpreting the Implementation
 
 With the code it provides, one would be able to observe that one way to insert into a linked list is by implementing the following
 steps:
