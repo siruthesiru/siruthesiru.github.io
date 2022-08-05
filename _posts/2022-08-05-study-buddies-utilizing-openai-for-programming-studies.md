@@ -4,7 +4,8 @@ layout: post
 comments: false
 tags: Academics
 excerpt_separator: "<!--more-->"
-sticky: false
+sticky: true
+hidden: true
 ---
 
 As I go through uni, I've noticed that a lot of my classmates seem to struggle when it comes to preparing for exams that include writing actual code especially for the language C. <!--more-->

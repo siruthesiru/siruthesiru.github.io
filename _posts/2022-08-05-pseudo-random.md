@@ -1,11 +1,11 @@
 ---
 title: Pseudo Random in Dota 2
 layout: post
-comments: false
 tags: Dota2
+comments: false
 excerpt_separator: "<!--more-->"
-sticky: true
-hidden: true
+sticky: false
+hidden: false
 ---
 
 In video games, when a character has a 10% chance to trigger an effect during a certain action, then you would expect that

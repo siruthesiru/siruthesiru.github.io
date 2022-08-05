@@ -1,5 +1,0 @@
-Paste this into home.html before pagination if you want comments
-
-{% if page.comments %}
-{% include disqus_comments.html %}
-{% endif %}
