@@ -89,9 +89,9 @@
     .meta {
       @include serif();
       font-weight: 300;
-      font-size: 20px;
+      font-size: 16px;
       a {
-        color: white;
+        color: lightgray;
       }
     }
     @media (max-width: ($MQMobile - 1px)) {
@@ -138,7 +138,7 @@
       border-radius: 100%;
       max-width: 100%;
       @include transition(all ease 1s);
-      box-shadow: inset 0 0 10px #000;
+      box-shadow: inset 0 0 50px #000;
       &:hover {
         @include transform(rotate(360deg));
       }
@@ -163,7 +163,7 @@
     // Background
     .header-info-back {
       font-size: 16px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.625);
       padding: 15px;
       letter-spacing: 0;
       line-height: 30px;

@@ -5,7 +5,7 @@ description: Siru's personal website.
 # keyword: "jekyll, theme, blog, blog theme"
 url: "https://sirutonin.github.io"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
-avatar: "img/header-avatar.jpeg"                    # the avatar showing on the homepage
+avatar: "img/header-avatar.png"                    # the avatar showing on the homepage
 
 
 # GitHub repository (if the site is hosted by GitHub)
@@ -35,7 +35,7 @@ emoji-plus: true  # false (default), true
 # CDN settings
 cdn:
   source:       # "jsdelivr" (default), "bootcdn", "unpkg", "cdnjs"
-  enable:       true # false (default), true
+  enable:       false # false (default), true
                 # optimizing asset files via jsDelivr or not
 
 

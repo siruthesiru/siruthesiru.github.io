@@ -4,14 +4,14 @@ title: Home
 homepage: true
 description: A silly space.
 header-img:
-  - url: img/home-bg/1.jpg
-    mask: rgba(40, 57, 101, .4)
-  - url: img/home-bg/2.jpg
-    mask: rgba(31, 64, 87, .2)
-  - url: img/home-bg/3.jpg
-    mask: rgba(68, 74, 83, .1)
-  - url: img/home-bg/4.jpg
-    mask: rgba(19, 75, 50, .2)
+  - url: img/home-bg/1.png
+    mask: rgba(0, 0, 0, 0)
+  - url: img/home-bg/2.png
+    mask: rgba(0, 0, 0, 0)
+  - url: img/home-bg/3.png
+    mask: rgba(0, 0, 0, 0)
+  - url: img/home-bg/4.png
+    mask: rgba(0, 0, 0, 0)
 ---
 
 {%- include utils/get-assets-baseurl.html -%}
@@ -19,7 +19,7 @@ header-img:
 
 {% for post in paginator.posts %}
 {% if post.hide-in-home %}
-<!----------- 不显示 ----------->
+
 {% else %}
     <!--
       Renoamen: support displaying images on homepage
@@ -38,13 +38,12 @@ header-img:
           <h3 class="post-subtitle">{{ post.subtitle }}</h3>
           {% endif %}
         </a>
+
+        {% if post.header-hide-desc == false %}
         <p class="post-content-preview">
-          {% if post.lang == "en" %}
-            {{ post.content | strip_html | truncate:200 }}
-          {% else %}
             {{ post.content | strip_html | truncate:100 }}
-          {% endif %}
         </p>
+        {% endif %}
       </div>
     </div>
 

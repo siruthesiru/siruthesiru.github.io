@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Hello Word
-subtitle: Welcome to Jekyll Theme Gungnir
-header-img: img/in-post/2020-10-07/header.jpg
+title: Megaman Battle Network & Why I Study IT
+subtitle: How a little GBA game changed my life
+header-img: img/in-post/2022/megaman.png
 header-style: text
-header-hide-desc: false
+header-hide-desc: true
 catalog: true
 tags:
-  - Jekyll
+  - Megaman
+  - VideoGames
 ---
 
 ## Paragraph
@@ -54,6 +55,7 @@ while True:
 
 ## Image
 
+![Image Example](/img/home-bg/3.jpg)
 
 Hey! I am an image!
 {:.desc}

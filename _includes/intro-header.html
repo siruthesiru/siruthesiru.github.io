@@ -8,7 +8,7 @@
 
 {% if include.type == 'post' or include.type == 'page' %}
 {% if page.homepage != true %}
-<style type="text/css">
+<style>
   header.intro-header{
     position: relative;
     background-image: url('{{ _assets_baseurl }}/{{ page.header-img }}');
@@ -26,7 +26,7 @@
 </style>
 
 {% else %}
-<style type="text/css">
+<style>
   header.intro-header{
     position: relative;
     height: 100vh;
