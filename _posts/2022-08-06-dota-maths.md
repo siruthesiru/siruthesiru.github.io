@@ -1,15 +1,18 @@
 ---
 layout: post
-title: Megaman Battle Network & Why I Study IT
-subtitle: How a little GBA game changed my life
-header-img: img/in-post/2022/megaman.png
+title: Mathematics in Dota 2
+subtitle: Interesting Math Implementations
+header-img: img/in-post/2022/oracle.png
 header-style: text
-header-hide-desc: true
+header-hide-desc: false
 catalog: true
+katex: true
 tags:
-  - Dota2
-  - VideoGames
+- Dota2
+- VideoGames
 ---
+
+![Oracle from Dota 2](/img/in-post/2022/oracle.png)
 
 ## Paragraph
 
@@ -55,20 +58,22 @@ while True:
 
 ## Image
 
-![Image Example](/img/home-bg/3.jpg)
+![Image Example](/img/home-bg/3.png)
 
 Hey! I am an image!
 {:.desc}
 
 ## Math
 
-Inline math: $$E = mc^2$$
+Inline math: $$ E = mc^2 $$
 
 Display math:
 
-$$
-i\hbar\frac{\partial \psi}{\partial t} = \frac{-\hbar^2}{2m} ( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} ) \psi + V \psi.
-$$
+
+inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+display mode (centered):
+
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
 ## Chart.js
 

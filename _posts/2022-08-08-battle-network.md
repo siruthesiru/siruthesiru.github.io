@@ -55,7 +55,7 @@ while True:
 
 ## Image
 
-![Image Example](/img/home-bg/3.jpg)
+![Image Example](/img/home-bg/3.png)
 
 Hey! I am an image!
 {:.desc}
