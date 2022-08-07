@@ -35,7 +35,7 @@ emoji-plus: true  # false (default), true
 # CDN settings
 cdn:
   source:       # "jsdelivr" (default), "bootcdn", "unpkg", "cdnjs"
-  enable:       # false (default), true
+  enable:       true # false (default), true
                 # optimizing asset files via jsDelivr or not
 
 
@@ -81,7 +81,7 @@ exclude:
   - global
   - vendor
 
-anchorjs: true  # if you want to customize anchor. check out `anchor.html`
+anchorjs: false # if you want to customize anchor. check out `anchor.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 timezone: Asia/Manila
 
@@ -164,7 +164,7 @@ analytics:
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: false
+service-worker: true
 
 
 # Whether or not to enable Hitokoto (the bubble on homepage)
