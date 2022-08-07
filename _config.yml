@@ -1,8 +1,8 @@
 # Site settings
 title: Sirutonin
-#SEOTitle: Jekyll theme Gungnir
+# SEOTitle: Jekyll theme Gungnir
 description: Siru's personal website.
-#keyword: "jekyll, theme, blog, blog theme"
+# keyword: "jekyll, theme, blog, blog theme"
 url: "https://sirutonin.github.io"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
 avatar: "img/header-avatar.jpeg"                    # the avatar showing on the homepage
