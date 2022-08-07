@@ -1,7 +1,7 @@
 jsdelivr:
   bootstrap-css: https://cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css
   font-awesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css
-  font-awesome-animation: https://cdn.jsdelivr.net/npm/font-awesome-animation@0.2.1/dist/font-awesome-animation.min.css
+#  font-awesome-animation: https://cdn.jsdelivr.net/npm/font-awesome-animation@0.2.1/dist/font-awesome-animation.min.css
   # jquery: https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js
   # fastclick: https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js
   tocbot:

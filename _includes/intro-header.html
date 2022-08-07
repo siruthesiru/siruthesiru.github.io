@@ -164,7 +164,7 @@
   {% if site.hitokoto %}
   <div class="header-bubble">
     <div class="bubble">
-      <p class="bubble-words" id="hitokoto">正在加载一言...</p>
+      <p class="bubble-words" id="hitokoto">Erm...</p>
     </div>
     <div class="bubble-tile"></div>
   </div>
@@ -174,7 +174,7 @@
   <div class="header-info">
     <div class="header-info-back">
       <div class="site-heading home-site-heading">
-        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+        <h1>{{ site.title }}</h1>
         <span class="subheading">{{ page.description }}</span>
       </div>
     </div>
@@ -189,7 +189,7 @@
         {% if page.homepage == true %}
         <!-- Only shows on mobile -->
         <div class="site-heading phone-site-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <h1>{{ site.title }}</h1>
           <span class="subheading">{{ page.description }}</span>
         </div>
         {% else %}
@@ -198,7 +198,7 @@
         {% else %}
         <div class="site-heading">
         {% endif %}
-          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <h1>{{ site.title }}</h1>
           <span class="subheading">{{ page.description }}</span>
         </div>
         {% endif %}

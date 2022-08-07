@@ -1,1 +1,2 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer urna urna, porta vel semper vitae, porta vel nibh. Donec et convallis lacus. Duis eleifend consequat odio in viverra. Nulla facilisi. Pellentesque tempus, neque quis mattis malesuada, sapien tellus imperdiet felis, quis sodales odio quam non turpis. In vulputate nisi non lacus egestas, id pulvinar nisl mollis. Suspendisse odio turpis, porttitor in molestie non, facilisis id velit.
+My name is **Sirutonin**, (hopefully) the one and only. I am a short little fella who decided to make this blog to
+serve as an outlet for my ideas before they fade away.

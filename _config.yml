@@ -1,16 +1,16 @@
 # Site settings
-title: Gungnir
-SEOTitle: Jekyll theme Gungnir
-description: Jekyll version of the blog theme Gungnir.
-keyword: "jekyll, theme, blog, blog theme"
-url: "https://jekyll-theme-gungnir.vercel.app"      # your host, for absolute URL
+title: Sirutonin
+#SEOTitle: Jekyll theme Gungnir
+description: Siru's personal website.
+#keyword: "jekyll, theme, blog, blog theme"
+url: "https://sirutonin.github.io"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
 avatar: "img/header-avatar.jpeg"                    # the avatar showing on the homepage
 
 
 # GitHub repository (if the site is hosted by GitHub)
-repository: Renovamen/jekyll-theme-gungnir
-repository_branch: main
+repository: siruthesiru/siruthesiru
+repository_branch: gungnir
 
 
 # Theme style settings
@@ -53,14 +53,14 @@ collections:
 
 # SNS settings
 sns:
-  RSS: true
-  github_username: Renovamen
-  weibo_username:
-  zhihu_username: chao-neng-gui-su
-  twitter_username: renovamen_zxh
-  facebook_username: renovamen.zou
-  linkedin_username: xiaohan-zou-55bba0160
-  email_address: renovamenzxh@gmail.com
+#  RSS: false
+  github_username: siruthesiru
+#  weibo_username:
+#  zhihu_username: chao-neng-gui-su
+  twitter_username: sirutonin
+#  facebook_username: renovamen.zou
+#  linkedin_username: xiaohan-zou-55bba0160
+  email_address: sirutonin@gmail.com
 
 
 # Build settings
@@ -79,9 +79,11 @@ exclude:
   - Gemfile.lock
   - /node_modules
   - global
+  - vendor
+
 anchorjs: true  # if you want to customize anchor. check out `anchor.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
-# timezone: CN
+timezone: Asia/Manila
 
 
 # Gems
@@ -102,23 +104,29 @@ kramdown:
 # Navigation menu settings
 menus:
   - title: Home
-    font: fab fa-fort-awesome
+    font: fab fa-house
     url: /
   - title: About
-    font: fas fa-paw
-    submenus:
-      - title: Me
-        font: fas fa-user-astronaut
-        url: /about/
-      - title: Theme
-        font: fas fa-meteor
-        url: /theme/
+    font: fas fa-address-card
+    url: /about/
   - title: Archive
     font: fas fa-archive
     url: /archive/
+  - title: Projects
+    font: fas fa-user-astronaut
+    url: /projects/
   - title: Links
     font: fas fa-link
     url: /links/
+
+
+#    submenus:
+#      - title: Me
+#        font: fas fa-user-astronaut
+#        url: /about/
+#      - title: Theme
+#        font: fas fa-meteor
+#        url: /theme/
 
 
 # Comment settings
@@ -126,39 +134,38 @@ comment:
   provider: gitalk # false (default), "disqus", "gitalk", "valine"
 
   # Disqus settings
-  disqus_username: renovamen
+#  disqus_username: renovamen
 
   # Gitalk settings
   # https://github.com/gitalk/gitalk
   gitalk:
-    clientID: 'faf464da633b08ff5317'
-    clientSecret: '402324fc860894e5fcba6320fddbddd1ec7f5644'
-    repo: gitalk-comments
-    owner: This-is-an-Apple
+    clientID: '7aebdc96c93ec32daeb9'
+    clientSecret: '52348fcead7a2d9d82727e250a853e52f4f32e03'
+    repo: siruthesiru-comments
+    owner: siruthesiru
     admin:
-      - Renovamen
-      - This-is-an-Apple
+      - siruthesiru
 
   # Valine settings
   # https://valine.js.org/
-  valine:
-    appID:
-    appKey:
+#  valine:
+#    appID:
+#    appKey:
 
 
 # Analytics settings
 analytics:
   # Baidu Analytics
-  ba_track_id: 00504d7a0bf51278aa92b36e60e830b5 # [your baidu track id]
+#  ba_track_id: 00504d7a0bf51278aa92b36e60e830b5 # [your baidu track id]
 
   # Google Analytics
-  ga_track_id: 'G-ZYM02DSEHS'               # [your google track id]
+#  ga_track_id: 'G-ZYM02DSEHS'               # [your google track id]
 
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
-service-worker: true
+service-worker: false
 
 
 # Whether or not to enable Hitokoto (the bubble on homepage)
-hitokoto: true # default: false
+hitokoto: false # default: false

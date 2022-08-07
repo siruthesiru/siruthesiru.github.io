@@ -12,9 +12,12 @@
     {% for page in site.menus %}
     <li>
       {% if page.url %}
-      <a href="{{ page.url | prepend: site.baseurl }}" class="faa-parent animated-hover">
+<!--      add animated-hover class if you want-->
+      <a href="{{ page.url | prepend: site.baseurl }}" class="faa-parent">
       {% else %}
-      <a class="faa-parent animated-hover">
+
+<!--      add animated-hover class if you want-->
+      <a class="faa-parent">
       {% endif %}
         {% if page.font %}
         <i class="{{page.font}} fa-lg faa-wrench"></i>
@@ -38,7 +41,9 @@
     {% endfor %}
 
     <li>
-      <a id="mobile-search-btn" class="faa-parent animated-hover">
+
+      <!--      add animated-hover class if you want-->
+      <a id="mobile-search-btn" class="faa-parent">
         <i class="fas fa-search fa-lg faa-wrench"></i> Search
       </a>
     </li>

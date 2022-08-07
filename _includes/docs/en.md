@@ -1,5 +1,5 @@
 
-# Ducumentation
+# Documentation
 
 Github: [<i class="fas fa-link"></i> Renovamen/jekyll-theme-gungnir](https://github.com/Renovamen/jekyll-theme-gungnir){:target="_blank"}
 

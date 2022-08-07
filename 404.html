@@ -6,7 +6,7 @@ header-style: text
 permalink: /404.html
 ---
 
-<style type="text/css">
+<style>
 	html, body{
     height: 100%;
   }
@@ -15,7 +15,7 @@ permalink: /404.html
 <div class="notfound">
 	<div class="error-info">
 		<h1 class="error-emoji"></h1>
-		<p>/* Oops! Where are we? */</p>
+		<p>Whoops! Are you lost?</p>
 		<p><a href="{{ site.baseurl }}/">$ cd /home/</a></p>
 	</div>
  </div>
@@ -23,7 +23,7 @@ permalink: /404.html
 <script>
 	const emojiArray = [
 		'\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(^_^)b', '(╯‵□′)╯',
-		'(=\'X\'=)', '(>_<)', '\\(°ˊДˋ°)/', 'ㄟ(▔▽▔)ㄏ'
+		'(=\'X\'=)', '(>_<)', 'ㄟ(▔▽▔)ㄏ'
 	];
 	const errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
 	$('.error-emoji').append(document.createTextNode(errorEmoji));

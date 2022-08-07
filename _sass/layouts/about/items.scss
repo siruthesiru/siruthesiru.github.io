@@ -31,8 +31,8 @@
   .item-thumbnail {
     width: 25%;
     max-width: 100%;
-    /*   height: auto; */
-    min-height: 15rem;
+    height: auto;
+    min-height: 20rem;
     vertical-align: middle;
     -webkit-background-size: cover;
     background-size: cover;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: $MQSmall) {
+@media (max-width: $MQIpad) {
   .about-page .item,
   .portfolio .item {
     width: 96%;
@@ -116,6 +116,7 @@
   }
   p {
     margin-top: -10px;
-    line-height: 10px;
+    line-height: 20px;
+    text-wrap: normal;
   }
 }

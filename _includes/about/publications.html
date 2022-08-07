@@ -1,7 +1,7 @@
 {%- include utils/get-assets-baseurl.html -%}
 {%- assign _assets_baseurl = __return -%}
 
-<div class="section publications">
+<div class="section publications" id="publications">
   <h3 class="about-title">Publications</h3>
   {% for pub in site.publications %}
   <article class="item">
@@ -10,7 +10,9 @@
     {% else %}
     {% endif %}
     <div class="item-content">
-      <h2 class="item-title">{{pub.title}}</h2>
+      <h2 class="item-title">
+        <a href="{{ pub.url }}"> {{pub.title}} </a>
+      </h2>
       <p>{{ pub.content }}</p>
     </div>
   </article>
