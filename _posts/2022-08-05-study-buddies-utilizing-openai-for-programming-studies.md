@@ -4,7 +4,7 @@ subtitle: But, much like everything, there is a catch.
 layout: post
 header-img: img/in-post/2022/faceless.png
 header-style: text
-header-hide-desc: false
+header-hide-desc: true
 catalog: true
 tags:
 - Guides
