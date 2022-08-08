@@ -25,7 +25,7 @@
     }
   }
   background: no-repeat center center;
-  background-color: $gray;
+  background-color: $red-wall;
   background-attachment: scroll;
   @include background-cover();
   // NOTE: Background images are set within the HTML using inline CSS!

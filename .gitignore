@@ -6,3 +6,5 @@ _site.backup
 Gemfile.lock
 .jekyll-cache
 _site
+global
+.idea

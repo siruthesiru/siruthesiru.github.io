@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!--<style>-->
+<!--  body:not(.loaded) img {-->
+<!--    display:none;-->
+<!--  }-->
+<!--</style>-->
+
+<html lang="en" id="html" style="background-color: #30141a">
   {% include head.html %}
 
   <!-- hack iOS CSS :active style -->
@@ -24,3 +31,9 @@
   <!-- Migrate from head to bottom, no longer block render and still work -->
   </body>
 </html>
+
+<script type="text/javascript">
+  window.onload = function () {
+      document.getElementById("html").style.backgroundColor = "";
+  }
+</script>
