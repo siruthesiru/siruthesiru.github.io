@@ -29,11 +29,13 @@
     {% include search.html %}
 
   <!-- Migrate from head to bottom, no longer block render and still work -->
+
   </body>
 </html>
 
 <script type="text/javascript">
   window.onload = function () {
+    setTimeout(1);
       document.getElementById("html").style.backgroundColor = "";
   }
 </script>

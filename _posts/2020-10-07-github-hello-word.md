@@ -9,7 +9,7 @@ catalog: true
 katex: true
 code: true
 mermaid: true
-graph: true
+chart: true
 tags:
   - Guides
 ---

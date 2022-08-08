@@ -4,7 +4,7 @@ layout: default
 
 {% if page.katex %}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" crossorigin="anonymous">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" crossorigin="anonymous" as="style">
 <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 <script>
@@ -19,10 +19,6 @@ layout: default
 
 {% if page.chart %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" type="text/javascript" crossorigin="anonymous"></script>
-{% endif %}
-
-{% if page.comments %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.min.js" integrity="sha512-EcTCcXV46teiNwe0VcnM5A038tcY+BaQYO4nW6Gh2i7v4/HjBVg7xx3+JBLl9WofDds//INJAiEGAtdgr8PWyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endif %}
 
 {% if page.catalog %}
@@ -46,7 +42,7 @@ layout: default
 {% include intro-header.html type='post' %}
 
 <!-- Post Content -->
-<article>
+<article >
   <div class="container">
     <div class="row">
       <!-- Post Container -->
