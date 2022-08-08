@@ -651,7 +651,7 @@ $gt-color-loader: var(--border-color-dark);
 $gt-color-error: #ff3860;
 $gt-color-hr: var(--border-color);
 $gt-color-input-border: rgba(0, 0, 0, 0.1);
-$gt-color-input-bg: var(--bg-teritary);
+$gt-color-input-bg: var(--bg-tertiary);
 $gt-color-comment-txt: var(--body-color);
 $gt-color-link-active: #333333;
 $gt-color-btn: #ffffff;
@@ -853,7 +853,7 @@ $gt-size-avatar-mobi: em(32px);
       color: $gt-color-main;
       border-color: $gt-color-main;
       &:hover {
-        background-color: var(--bg-teritary);
+        background-color: var(--bg-tertiary);
       }
     }
     &-public {
