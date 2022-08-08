@@ -22,11 +22,11 @@ const PRECACHE_LIST = [
   "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/avatar.png",
   "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/home-bg/1.png",
   "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/js/lib.min.js.backup",
-  // "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
-  "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css",
-  "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-brands-400.woff2",
-  "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-regular-400.woff2",
-  "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-solid-900.woff2",
+  "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
+  "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+  // "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-brands-400.woff2",
+  // "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-regular-400.woff2",
+  // "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-solid-900.woff2",
 ];
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
@@ -56,6 +56,7 @@ const getCacheBustingUrl = (req) => {
   // max-age on mutable content is error-prone, with SW life of bugs can even extend.
   // Until cache mode of Fetch API landed, we have to workaround cache-busting with query string.
   // Cache-Control-Bug: https://bugs.chromium.org/p/chromium/issues/detail?id=453190
+
   url.search += (url.search ? "&" : "?") + "cache-bust=" + now;
   return url.href;
 };

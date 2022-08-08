@@ -7,6 +7,9 @@ header-style: text
 header-hide-desc: false
 catalog: true
 katex: true
+code: true
+mermaid: true
+graph: true
 tags:
   - Guides
 ---

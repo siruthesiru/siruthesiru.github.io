@@ -13,14 +13,14 @@
     <li>
       {% if page.url %}
 <!--      add animated-hover class if you want-->
-      <a href="{{ page.url | prepend: site.baseurl }}" class="faa-parent">
+      <a href="{{ page.url | prepend: site.baseurl }}" class="">
       {% else %}
 
 <!--      add animated-hover class if you want-->
-      <a class="faa-parent">
+      <a class="">
       {% endif %}
         {% if page.font %}
-        <i class="{{page.font}} fa-lg faa-wrench"></i>
+        <i class="{{page.font}} fa-lg"></i>
         {% endif %}
         <span>&nbsp;</span>{{ page.title }}
       </a>
@@ -29,9 +29,9 @@
       <ul class="sub-menu">
         {% for submenu in page.submenus %}
         <li>
-          <a href="{{ submenu.url | prepend: site.baseurl }}" class="faa-parent animated-hover">
-          <i class="{{submenu.font}} fa-lg faa-wrench"></i>
-            <span>&nbsp;</span>{{ submenu.title }}
+          <a href="{{ submenu.url | prepend: site.baseurl }}" class="">
+          <i class="{{submenu.font}} fa-lg"></i>
+            <span></span>{{ submenu.title }}
           </a>
         </li>
         {% endfor %}
@@ -43,8 +43,8 @@
     <li>
 
       <!--      add animated-hover class if you want-->
-      <a id="mobile-search-btn" class="faa-parent">
-        <i class="fas fa-search fa-lg faa-wrench"></i> Search
+      <a id="mobile-search-btn" class="">
+        <i class="fa fa-search fa-lg"></i> Search
       </a>
     </li>
   </ul>

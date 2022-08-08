@@ -6,6 +6,7 @@ header-img: img/in-post/2022/faceless.png
 header-style: text
 header-hide-desc: true
 catalog: true
+code: true
 tags:
 - Guides
 - "Study Buddies"

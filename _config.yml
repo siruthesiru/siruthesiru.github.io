@@ -111,19 +111,19 @@ kramdown:
 # Navigation menu settings
 menus:
   - title: Home
-    font: fas fa-home
+    font: fa fa-home
     url: /
   - title: About
-    font: fas fa-address-card
+    font: fa fa-id-card
     url: /about/
   - title: Archive
-    font: fas fa-archive
+    font: fa fa-archive
     url: /archive/
   - title: Projects
-    font: fas fa-user-astronaut
+    font: fa fa-cubes
     url: /projects/
   - title: Links
-    font: fas fa-link
+    font: fa fa-link
     url: /links/
 
 

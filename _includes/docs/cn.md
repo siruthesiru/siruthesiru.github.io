@@ -1,6 +1,6 @@
 # 这大概是一篇文档
 
-Github: [<i class="fas fa-link"></i> Renovamen/jekyll-theme-gungnir](https://github.com/Renovamen/jekyll-theme-gungnir){:target="_blank"}
+Github: [<i class="fa fa-link"></i> Renovamen/jekyll-theme-gungnir](https://github.com/Renovamen/jekyll-theme-gungnir){:target="_blank"}
 
 在 [Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io){:target="_blank"} 的基础上瞎改的的主题，同时~~照搬~~借鉴了很多其他主题的代码和设计，包括但不限于 [mashirozx/Sakura](https://github.com/mashirozx/Sakura/){:target="_blank"}、[kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme){:target="_blank"}、[Fechin/hexo-theme-diaspora](https://github.com/Fechin/hexo-theme-diaspora){:target="_blank"}、[liuzc/LeaveIt](https://github.com/liuzc/LeaveIt){:target="_blank"} 等（这么看来似乎也没多少东西是我自己写的了，逃）。
 
@@ -154,10 +154,10 @@ sns:
 ```yaml
 menus:
   - title: Home
-    font: fab fa-fort-awesome
+    font: fa fa-fort-awesome
     url: /
   - title: Archive
-    font: fas fa-archive
+    font: fa fa-archive
     url: /archive/
 ```
 
@@ -168,13 +168,13 @@ menus:
 ```yaml
 menus:
   - title: About
-    font: fas fa-paw
+    font: fa fa-paw
     submenus:
       - title: Me
-        font: fas fa-user-astronaut
+        font: fa fa-user-astronaut
         url: /about/
       - title: Theme
-        font: fas fa-meteor
+        font: fa fa-meteor
         url: /theme/
 ```
 

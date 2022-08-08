@@ -1,7 +1,7 @@
 
 # Documentation
 
-Github: [<i class="fas fa-link"></i> Renovamen/jekyll-theme-gungnir](https://github.com/Renovamen/jekyll-theme-gungnir){:target="_blank"}
+Github: [<i class="fa fa-link"></i> Renovamen/jekyll-theme-gungnir](https://github.com/Renovamen/jekyll-theme-gungnir){:target="_blank"}
 
 Derived from [Huxpro/huxpro.github.io](https://github.com/Huxpro/huxpro.github.io){:target="_blank"}. Some of the designs and code are borrowed from other themes, including but not limited to [mashirozx/Sakura](https://github.com/mashirozx/Sakura/){:target="_blank"}, [kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme){:target="_blank"}, [Fechin/hexo-theme-diaspora](https://github.com/Fechin/hexo-theme-diaspora){:target="_blank"}, [liuzc/LeaveIt](https://github.com/liuzc/LeaveIt){:target="_blank"}, et al.
 
@@ -156,10 +156,10 @@ Configuration of the first level menu is like this:
 ```yaml
 menus:
   - title: Home
-    font: fab fa-fort-awesome
+    font: fa fa-fort-awesome
     url: /
   - title: Archive
-    font: fas fa-archive
+    font: fa fa-archive
     url: /archive/
 ```
 
@@ -170,13 +170,13 @@ Use key `submenus` to add the second level menu:
 ```yaml
 menus:
   - title: About
-    font: fas fa-paw
+    font: fa fa-paw
     submenus:
       - title: Me
-        font: fas fa-user-astronaut
+        font: fa fa-user-astronaut
         url: /about/
       - title: Theme
-        font: fas fa-meteor
+        font: fa fa-meteor
         url: /theme/
 ```
 

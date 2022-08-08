@@ -37,6 +37,10 @@ layout: default
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js" crossorigin="anonymous"></script>
 {% endif %}
 
+{% if page.code %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js" crossorigin="anonymous"></script>
+{% endif %}
+
 
 <!-- Post Header -->
 {% include intro-header.html type='post' %}

@@ -48,7 +48,7 @@ var createSnackbar = (function () {
           previous.dismiss();
         }
       }.bind(snackbar),
-      duration || 5000
+      duration || 10000
     );
 
     snackbar.addEventListener(
