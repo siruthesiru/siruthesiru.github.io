@@ -2,8 +2,41 @@
 layout: default
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="{{ site.baseurl }}/{{ page.header-img }}" width="0" height="0"> -->
+{% if page.katex %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      // ...options...
+    });
+  });
+</script>
+
+{% endif %}
+
+{% if page.chart %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" type="text/javascript" crossorigin="anonymous"></script>
+{% endif %}
+
+{% if page.comments %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.7.2/gitalk.min.js" integrity="sha512-EcTCcXV46teiNwe0VcnM5A038tcY+BaQYO4nW6Gh2i7v4/HjBVg7xx3+JBLl9WofDds//INJAiEGAtdgr8PWyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% endif %}
+
+{% if page.catalog %}
+<script src="https://cdn.jsdelivr.net/npm/tocbot@4.11.2/dist/tocbot.min.js"></script>
+{% endif %}
+
+{% if page.mermaid %}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"></script>
+{% endif %}
+
+{% if page.comments %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js" crossorigin="anonymous"></script>
+{% endif %}
+
 
 <!-- Post Header -->
 {% include intro-header.html type='post' %}
@@ -53,9 +86,14 @@ layout: default
         </ul>
         <hr style="visibility: hidden;">
 
-        {% if site.comment.provider %}
-          {% include comments.html %}
+        {%if page.comments %}
+
+          {% if site.comment.provider %}
+            {% include comments.html %}
+          {% endif %}
+
         {% endif %}
+
       </div>
 
 

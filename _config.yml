@@ -29,7 +29,7 @@ math:
                   # only make sense when `math.engine: true`
 chart: true       # false (default), true
 mermaid: true     # false (default), true
-emoji-plus: true  # false (default), true
+emoji-plus: false  # false (default), true
 
 katex:
   js_path: "{{ Gem::lib_path }}/assets/js"  # Path used to search for katex.min.js

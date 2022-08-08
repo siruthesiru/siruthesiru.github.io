@@ -38,7 +38,7 @@
     repo: "{{ site.comment.gitalk.repo }}",
     owner: "{{ site.comment.gitalk.owner }}",
     admin: [{{ _admin_list }}],
-    id: md5(location.pathname),
+    id: location.pathname,
     distractionFreeMode: false
   });
   gitalk.render("gitalk-container");

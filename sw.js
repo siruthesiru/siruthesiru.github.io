@@ -21,7 +21,7 @@ const PRECACHE_LIST = [
   "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/header-avatar.png",
   "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/avatar.png",
   "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/home-bg/1.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/js/lib.min.js",
+  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/js/lib.min.js.backup",
   // "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
   "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css",
   "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-brands-400.woff2",

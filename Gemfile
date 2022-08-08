@@ -15,3 +15,5 @@ gem "jekyll-katex"
 gem "katex"
 
 gem 'therubyracer'
+
+gem 'rack-cors'

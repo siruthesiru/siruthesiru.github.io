@@ -8,12 +8,16 @@
 {% endif %}
 
 <!-- Renovamen: add support for chart and mermaid -->
-{% if site.chart %}
-  {% include enhancements/chart.html %}
+{% if page.chart %}
+  {% if site.chart %}
+    {% include enhancements/chart.html %}
+  {% endif %}
 {% endif %}
 
-{% if site.mermaid %}
-  {% include enhancements/mermaid.html %}
+{% if page.chart %}
+  {% if site.mermaid %}
+    {% include enhancements/mermaid.html %}
+  {% endif %}
 {% endif %}
 
 <!-- Renovamen: add support for enhancement emoji -->

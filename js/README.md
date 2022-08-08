@@ -1,6 +1,6 @@
 # Lib Details
 
-[`lib.min.js`](lib.min.js) jsDelivr Katex Mathjax：
+[`lib.min.js.backup`](lib.min.js.backup) jsDelivr Katex Mathjax：
 
 1. [jQuery](https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js)
 2. [Highlight.js](https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js)

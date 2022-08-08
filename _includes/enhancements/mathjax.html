@@ -16,5 +16,10 @@
   });
 </script>
 
-{%- include utils/get-cdn.html -%} {%- assign _cdn = __return -%}
-<script type="text/javascript" src="{{ _cdn.mathjax }}"></script>
+{% if site.cdn %}
+
+    {%- include utils/get-cdn.html -%} {%- assign _cdn = __return -%}
+    <script type="text/javascript" src="{{ _cdn.mathjax }}"></script>
+
+{% endif %}
+

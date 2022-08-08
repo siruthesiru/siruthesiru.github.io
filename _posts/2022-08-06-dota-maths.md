@@ -7,6 +7,9 @@ header-style: text
 header-hide-desc: false
 catalog: true
 katex: true
+chart: true
+mermaid: true
+comments: true
 tags:
 - "Dota 2"
 - "Video Games"
@@ -55,15 +58,6 @@ $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
             ],
             "borderWidth": 1
         }]
-    },
-    "options": {
-        "scales": {
-            "yAxes": [{
-                "ticks": {
-                    "beginAtZero": true
-                }
-            }]
-        }
     }
 }
 ```

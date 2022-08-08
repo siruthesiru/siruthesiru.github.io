@@ -16,14 +16,11 @@
 <!-- add dark / light mode switcher -->
 {% include mode.html %}
 
-
 {%- include utils/get-assets-baseurl.html -%}
 {%- assign _assets_baseurl = __return -%}
 
-
 <!-- Theme JavaScript -->
 <script src="{{ "/js/gungnir/gungnir.min.js" | prepend: _assets_baseurl }}"></script>
-
 
 <!-- Service Worker -->
 {% if site.service-worker %}
@@ -34,14 +31,15 @@
 
 {% if page.title == 'Archive' %}
 <!-- jquery.tagcloud.js -->
-<script>
-  $.fn.tagcloud.defaults = {
-    //size: {start: 1, end: 1, unit: 'em'},
-    color: {start: '#a5a5e4', end: '#4388c4'},
-  };
-  $('#tag_cloud a').tagcloud();
-</script>
-<script src="{{ "/js/gungnir/archive.js" | prepend: _assets_baseurl }}"></script>
+  <script>
+    $.fn.tagcloud.defaults = {
+      //size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#a5a5e4', end: '#4388c4'},
+    };
+    $('#tag_cloud a').tagcloud();
+  </script>
+
+  <script src="{{ "/js/gungnir/archive.js" | prepend: _assets_baseurl }}"></script>
 {% endif %}
 
 
