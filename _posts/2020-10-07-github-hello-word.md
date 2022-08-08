@@ -2,12 +2,13 @@
 layout: post
 title: Hello Word
 subtitle: Welcome to Jekyll Theme Gungnir
-header-img: img/in-post/2020-10-07/header.jpg
+header-img: img/in-post/2022/star.png
 header-style: text
 header-hide-desc: false
 catalog: true
+katex: true
 tags:
-  - Jekyll
+  - Guides
 ---
 
 ## Paragraph
@@ -29,6 +30,99 @@ Most people would find the picture of our universe as an infinite tower of torto
 ###### H6 Heading
 
 
+# Text formatting
+{% highlight markdown %}
+- **Bold**
+- _Italics_
+- ~~Strikethrough~~
+- <ins>Underline</ins>
+- <sup>Superscript</sup>
+- <sub>Subscript</sub>
+- Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
+- Citation: <cite>&mdash; Chester How</cite>
+  {% endhighlight %}
+
+- **Bold**
+- _Italics_
+- ~~Strikethrough~~
+- <ins>Underline</ins>
+- <sup>Superscript</sup>
+- <sub>Subscript</sub>
+- Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
+- Citation: <cite>&mdash; Chester How</cite>
+
+# Lists
+{% highlight markdown %}
+1. Ordered list item 1
+2. Ordered list item 2
+3. Ordered list item 3
+
+* Unordered list item 1
+* Unordered list item 2
+* Unordered list item 3
+  {% endhighlight %}
+
+1. Ordered list item 1
+2. Ordered list item 2
+3. Ordered list item 3
+
+* Unordered list item 1
+* Unordered list item 2
+* Unordered list item 3
+
+# Links
+{% highlight markdown %}
+Check out tale on [GitHub](https://github.com/chesterhow/tale).
+{% endhighlight %}
+
+Check out tale on [GitHub](https://github.com/chesterhow/tale).
+
+
+# Code and Syntax Highlighting
+Use back-ticks for `inline code`. Multi-line code snippets are supported too through Pygments.
+
+{% highlight js %}
+// Sample javascript code
+var s = "JavaScript syntax highlighting";
+alert(s);
+{% endhighlight %}
+
+{% highlight python %}
+# Sample python code
+s = "Python syntax highlighting"
+print s
+{% endhighlight %}
+
+{% highlight js %}
+// Sample javascript code
+var s = "JavaScript syntax highlighting";
+alert(s);
+{% endhighlight %}
+
+# Blockquotes
+{% highlight markdown %}
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+{% endhighlight %}
+
+> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+# Horizontal Rule & Line Break
+{% highlight markdown %}
+Use `<hr>` for horizontal rules
+
+<hr>
+
+and `<br>` for line breaks.
+
+<br>
+{% endhighlight %}
+
+Use `<hr>` for horizontal rules
+
+<hr>
+
+and `<br>` for line breaks.
 
 ## Code Block
 
@@ -60,13 +154,13 @@ Hey! I am an image!
 
 ## Math
 
-Inline math: $$E = mc^2$$
+Inline math: $$ E = mc^2 $$
 
-Display math:
+inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
-$$
-i\hbar\frac{\partial \psi}{\partial t} = \frac{-\hbar^2}{2m} ( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} ) \psi + V \psi.
-$$
+Display mode (centered):
+
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
 ## Chart.js
 

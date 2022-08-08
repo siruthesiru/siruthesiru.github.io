@@ -5,7 +5,7 @@ description: Siru's personal website.
 # keyword: "jekyll, theme, blog, blog theme"
 url: "https://sirutonin.github.io"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
-avatar: "img/header-avatar.png"                    # the avatar showing on the homepage
+avatar: "img/avatar.png"                    # the avatar showing on the homepage
 
 
 # GitHub repository (if the site is hosted by GitHub)
@@ -73,7 +73,7 @@ sns:
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 # highlighter: rouge
 permalink: pretty
-paginate: 5
+paginate: 8
 exclude:
   - package.json
   - package-lock.json
@@ -111,7 +111,7 @@ kramdown:
 # Navigation menu settings
 menus:
   - title: Home
-    font: fab fa-house
+    font: fas fa-home
     url: /
   - title: About
     font: fas fa-address-card

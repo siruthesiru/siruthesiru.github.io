@@ -39,7 +39,7 @@
     display: block;
     overflow-x: hidden !important;
     overflow-y: auto;
-    background-color: $brand-primary;
+    background-color: $red-wall;
     @include transition(transform 0.5s);
     @include gungnir-font();
 
@@ -48,7 +48,7 @@
     }
 
     p {
-      color: lighten($brand-primary, 50%);
+      color: lighten($white-faded, 50%);
     }
 
     .mobile-menu-avatar {
@@ -64,8 +64,8 @@
         height: 90px;
         margin: 0 auto;
         border-radius: 100%;
-        background-color: lighten($brand-primary, 40%);
-        box-shadow: 0px 10px 25px 0px rgba(lighten($brand-primary, 40%), 0.27);
+        background-color: lighten($white-faded, 40%);
+        box-shadow: 0px 10px 25px 0px rgba(lighten($white-faded, 40%), 0.27);
         img {
           padding: 2px;
           max-width: 100%;

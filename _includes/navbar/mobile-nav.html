@@ -1,11 +1,11 @@
 <div class="mobile-nav">
   <div class="mobile-menu-avatar">
     <div class="avatar-container">
-      <img src="{{site.baseurl}}/img/header-avatar.png">
+      <img src="{{site.baseurl}}/img/avatar.png">
     </div>
   </div>
 
-  <p class="mobile-menu-heading">Meow?</p>
+  <p class="mobile-menu-heading">Welcome!</p>
 
   {% include sns-links.html center=true %}
   <ul>
@@ -22,7 +22,7 @@
         {% if page.font %}
         <i class="{{page.font}} fa-lg faa-wrench"></i>
         {% endif %}
-        {{ page.title }}
+        <span>&nbsp;</span>{{ page.title }}
       </a>
 
       {% if page.submenus %}
@@ -31,7 +31,7 @@
         <li>
           <a href="{{ submenu.url | prepend: site.baseurl }}" class="faa-parent animated-hover">
           <i class="{{submenu.font}} fa-lg faa-wrench"></i>
-          {{ submenu.title }}
+            <span>&nbsp;</span>{{ submenu.title }}
           </a>
         </li>
         {% endfor %}

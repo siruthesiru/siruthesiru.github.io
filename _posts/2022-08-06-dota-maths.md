@@ -8,70 +8,22 @@ header-hide-desc: false
 catalog: true
 katex: true
 tags:
-- Dota2
-- VideoGames
+- "Dota 2"
+- "Video Games"
 ---
 
 ![Oracle from Dota 2](/img/in-post/2022/oracle.png)
 
-## Paragraph
-
-A well-known scientist (some say it was Bertrand Russell) once gave a public lecture on astronomy. He described how the earth orbits around the sun and how the sun, in turn, orbits around the center of a vast collection of stars called our galaxy. At the end of the lecture, a little old lady at the back of the room got up and said: “What you have told us is rubbish. The world is really a flat plate supported on the back of a giant tortoise.” The scientist gave a superior smile before replying, “What is the tortoise standing on.” “You’re very clever, young man, very clever,” said the old lady. “But it’s turtles all the way down!”
-
-Most people would find the picture of our universe as an infinite tower of tortoises rather ridiculous, but why do we think we know better? What do we know about the universe, and how do we know it? Where did the universe come from, and where is it going? Did the universe have a beginning, and if so, what happened before then? What is the nature of time? Will it ever come to an end? Can we go back in time? Recent breakthroughs in physics, made possible in part by fantastic new technologies, suggest answers to some of these longstanding questions. Someday these answers may seem as obvious to us as the earth orbiting the sun – or perhaps as ridiculous as a tower of tortoises. Only time (whatever that may be) will tell.
-
----
-
-## H2 Heading
-
-### H3 Heading
-
-#### H4 Heading
-
-##### H5 Heading
-
-###### H6 Heading
-
-
-
-## Code Block
-
-```python
-import food
-
-class Dragon:
-    def __init__(self, happiness):
-        self.happiness = happiness
-    def code(self):
-        """ just code """
-        self.happiness -= 60
-    def eat(self, n)
-        # just eat
-        self.happiness += n * food.size
-
-me = Dragon(100)
-
-while True:
-    me.code()
-    me.eat(10)
-```
-
-## Image
-
-![Image Example](/img/home-bg/3.png)
-
-Hey! I am an image!
-{:.desc}
+In video games, when a character has a 10% chance to trigger an effect during a certain action, then you would expect that
+event to occur at least once in 10 attempts. However with true random number generation, that isn't quite how it works. <!--more-->
 
 ## Math
 
 Inline math: $$ E = mc^2 $$
 
-Display math:
-
-
 inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-display mode (centered):
+
+Display mode (centered):
 
 $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
@@ -141,27 +93,3 @@ classDiagram
         +run()
     }
 ```
-
-## Emoji
-
-:smile: :smirk: :racehorse: :wolf: `斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
-
-
-## Tag
-
-`info`{:.info} `success`{:.success} `warning`{:.warning} `error`{:.error}
-
-
-## Alert
-
-Info.
-{:.info}
-
-Success.
-{:.success}
-
-Warning.
-{:.warning}
-
-Error.
-{:.error}
