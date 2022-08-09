@@ -8,8 +8,8 @@ header-hide-desc: false
 catalog: true
 katex: true
 code: true
-mermaid: true
-chart: true
+mermaid: false
+chart: false
 tags:
   - Guides
 ---

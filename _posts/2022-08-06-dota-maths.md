@@ -7,7 +7,7 @@ header-style: text
 header-hide-desc: false
 catalog: true
 katex: true
-chart: true
+chart: false
 mermaid: false
 comments: true
 tags:
@@ -29,64 +29,3 @@ inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 Display mode (centered):
 
 $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-
-## Chart.js
-
-```chart
-{
-    "type": "bar",
-    "data": {
-        "labels": ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        "datasets": [{
-            "label": "# of Votes",
-            "data": [12, 19, 3, 5, 2, 3],
-            "backgroundColor": [
-                "rgba(255, 99, 132, 0.2)",
-                "rgba(54, 162, 235, 0.2)",
-                "rgba(255, 206, 86, 0.2)",
-                "rgba(75, 192, 192, 0.2)",
-                "rgba(153, 102, 255, 0.2)",
-                "rgba(255, 159, 64, 0.2)"
-            ],
-            "borderColor": [
-                "rgba(255, 99, 132, 1)",
-                "rgba(54, 162, 235, 1)",
-                "rgba(255, 206, 86, 1)",
-                "rgba(75, 192, 192, 1)",
-                "rgba(153, 102, 255, 1)",
-                "rgba(255, 159, 64, 1)"
-            ],
-            "borderWidth": 1
-        }]
-    },
-    "options": {
-        "animation": false
-    }
-}
-```
-
-## mermaid
-
-```mermaid
-classDiagram
-    Animal <|-- Duck
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
-```
