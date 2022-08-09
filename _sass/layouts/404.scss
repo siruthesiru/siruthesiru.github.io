@@ -5,9 +5,10 @@
   margin-top: -160px;
   width: 100%;
   .error-info {
-    position: absolute;
-    left: 50%;
-    margin-left: -170px;
+    //position: absolute;
+    //left: 50%;
+    //margin-left: -170px;
+    padding-top: 50vh;
     bottom: 35%;
     text-align: center;
     h1, p {
@@ -23,6 +24,7 @@
       line-height: 14px;
       a {
         text-decoration: none;
+        color: var(--primary-color);
         &:after {
           content:'';
           position: absolute;
@@ -31,6 +33,10 @@
           margin-top: -2px;
           margin-left: 8px;
           animation: blink 1s infinite steps(1, start);
+          color: var(--primary-color);
+        };
+        &:hover {
+          text-decoration: underline;
         }
         @keyframes blink {
           0%, 100% {

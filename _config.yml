@@ -122,9 +122,9 @@ menus:
 #      - title: Me
 #        font: fas fa-user-astronaut
 #        url: /about/
-#      - title: Theme
+#      - title: Ramblings
 #        font: fas fa-meteor
-#        url: /theme/
+#        url: /ramblings/
 
 
 # Comment settings

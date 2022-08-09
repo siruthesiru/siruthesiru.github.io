@@ -8,14 +8,34 @@ permalink: /offline.html
 ---
 
 <style>
-	html, body{
-    height: 100%;
-  }
+	html,body {
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	h2 {
+		color: var(--bg);
+	}
+
+	h2:hover{
+		color: var(--body-color);
+	}
 </style>
 
 <div class="notfound">
 	<div class="error-info">
 		<h1 class="error-emoji"></h1>
 		<p>What the... You're offline!</p>
+		<h2>Don't touch me, dude.</h2>
 	</div>
 </div>
+
+<script>
+	const emojiArray = [
+		'\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(^_^)b', '(╯‵□′)╯',
+		'(=\'X\'=)', '(>_<)', 'ㄟ(▔▽▔)ㄏ'
+	];
+	const errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
+	$('.error-emoji').append(document.createTextNode(errorEmoji));
+</script>
