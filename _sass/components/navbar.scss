@@ -1,6 +1,6 @@
 // Navigation
 
-// Renovamen: modify styles of navbar menu on mobile
+// modify styles of navbar menu on mobile
 .mobile-nav {
   display: none;
 }
@@ -16,7 +16,7 @@
     $nav-transition: transform 0.5s, border-radius 1s;
     @include transition($nav-transition);
     position: relative;
-    // height will be set to $(window).height() in gungnir.js
+    // height will be set to $(window).height() in custom.js
     // overflow-y: scroll;
     // overflow-x: hidden;
     &.open {
@@ -424,7 +424,7 @@
     margin-top: 4px;
   }
 
-  // Renovamen: icon change when navbar menu open (mobile)
+  // icon change when navbar menu open (mobile)
   &.navOpen .icon-bar {
     margin-top: 3px;
     transform: rotate(-45deg);

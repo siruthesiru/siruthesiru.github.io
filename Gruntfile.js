@@ -4,8 +4,8 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON("package.json"),
     uglify: {
       main: {
-        src: "js/gungnir/<%= pkg.name %>.js",
-        dest: "js/gungnir/<%= pkg.name %>.min.js",
+        src: "js/custom/<%= pkg.name %>.js",
+        dest: "js/custom/<%= pkg.name %>.min.js",
       },
     },
     banner:
@@ -20,13 +20,13 @@ module.exports = function (grunt) {
           banner: "<%= banner %>",
         },
         files: {
-          src: ["js/gungnir/<%= pkg.name %>.min.js"],
+          src: ["js/custom/<%= pkg.name %>.min.js"],
         },
       },
     },
     watch: {
       scripts: {
-        files: ["js/gungnir/<%= pkg.name %>.js"],
+        files: ["js/custom/<%= pkg.name %>.js"],
         tasks: ["uglify"],
         options: {
           spawn: false,

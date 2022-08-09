@@ -16,16 +16,16 @@
 <!-- add dark / light mode switcher -->
 {% include mode.html %}
 
-{%- include utils/get-assets-baseurl.html -%}
-{%- assign _assets_baseurl = __return -%}
+
+
 
 <!-- Theme JavaScript -->
-<script src="{{ "/js/gungnir/gungnir.min.js" | prepend: _assets_baseurl }}"></script>
+<script src="{{ "/js/custom/gungnir.min.js" | prepend: _assets_baseurl }}"></script>
 
 <!-- Service Worker -->
 {% if site.service-worker %}
-<script src="{{ "/js/gungnir/sw-registration.js" | prepend: _assets_baseurl }}"></script>
-<script src="{{ "/js/gungnir/snackbar.js" | prepend: _assets_baseurl }}"></script>
+<script src="{{ "/js/custom/sw-registration.js" | prepend: _assets_baseurl }}"></script>
+<script src="{{ "/js/custom/snackbar.js" | prepend: _assets_baseurl }}"></script>
 {% endif %}
 
 
@@ -39,7 +39,7 @@
     $('#tag_cloud a').tagcloud();
   </script>
 
-  <script src="{{ "/js/gungnir/archive.js" | prepend: _assets_baseurl }}"></script>
+  <script src="{{ "/js/custom/archive.js" | prepend: _assets_baseurl }}"></script>
 {% endif %}
 
 
@@ -54,15 +54,3 @@
 {% if site.analytics.ga_track_id %}
   {% include analytics/google.html %}
 {% endif %}
-
-
-<!-- Baidu Tongji -->
-<!--{% if site.analytics.ba_track_id %}-->
-<!--  {% include analytics/baidu.html %}-->
-<!--{% endif %}-->
-
-
-<!-- Multi-Lingual -->
-<!--{% if page.multilingual %}-->
-<!--  {% include multilingual/script.html %}-->
-<!--{% endif %}-->

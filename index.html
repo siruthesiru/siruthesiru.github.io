@@ -14,15 +14,15 @@ header-img:
     mask: rgba(0, 0, 0, 0)
 ---
 
-{%- include utils/get-assets-baseurl.html -%}
-{%- assign _assets_baseurl = __return -%}
+
+
 
 {% for post in paginator.posts %}
 {% if post.hide-in-home %}
 
 {% else %}
     <!--
-      Renoamen: support displaying images on homepage
+      Support displaying images on homepage
       Borrowed a lot from: https://github.com/Fechin/hexo-theme-diaspora
     -->
     {% if site.theme_style.post_preview != "text" %}
@@ -106,7 +106,6 @@ header-img:
 
 {% if site.theme_style.post_preview != "text" %}
 <script>
-  // 文章上浮效果
   window.sr = ScrollReveal();
   sr.reveal(".post-preview-img", {
     duration: 700,

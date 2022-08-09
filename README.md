@@ -55,7 +55,7 @@ Inherit from the original theme:
 
 ```bash
 git clone https://github.com/Renovamen/jekyll-theme-gungnir.git
-cd jekyll-theme-gungnir
+cd jekyll-theme-custom
 
 # install denpendencies
 bundle config set path 'vendor/bundle'

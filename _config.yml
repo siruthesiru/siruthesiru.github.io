@@ -7,10 +7,11 @@ url: "https://sirutonin.github.io"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
 avatar: "img/avatar.png"                    # the avatar showing on the homepage
 header-switch: false
+timezone: Asia/Manila
 
 # GitHub repository (if the site is hosted by GitHub)
 repository: siruthesiru/siruthesiru
-repository_branch: gungnir
+repository_branch: custom
 
 
 # Theme style settings
@@ -44,7 +45,6 @@ cdn:
   enable:       false # false (default), true
                 # optimizing asset files via jsDelivr or not
 
-
 # Publish posts or collection documents with a future date.
 future: true
 
@@ -61,13 +61,10 @@ collections:
 sns:
 #  RSS: false
   github_username: siruthesiru
-#  weibo_username:
-#  zhihu_username: chao-neng-gui-su
   twitter_username: sirutonin
-#  facebook_username: renovamen.zou
-#  linkedin_username: xiaohan-zou-55bba0160
+#  facebook_username:
+#  linkedin_username:
   email_address: sirutonin@gmail.com
-
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -88,9 +85,6 @@ exclude:
   - vendor
 
 anchorjs: false # if you want to customize anchor. check out `anchor.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-timezone: Asia/Manila
-
 
 # Gems
 # you have to `bundle config set path 'vendor/bundle' && bundle install` before local preview
@@ -99,14 +93,12 @@ plugins:
   - jemoji
   - katex
 
-
 # Markdown settings
 markdown: kramdown
 kramdown:
   input: GFM                       # use Github Flavored Markdown !important
   syntax_highlighter_opts:
     disable: true                  # we use highlight.js for syntax highlighting, so we disable rouge here
-
 
 # Navigation menu settings
 menus:
@@ -125,7 +117,6 @@ menus:
   - title: Links
     font: fa fa-link
     url: /links/
-
 
 #    submenus:
 #      - title: Me
@@ -162,9 +153,6 @@ comment:
 
 # Analytics settings
 analytics:
-  # Baidu Analytics
-#  ba_track_id: 00504d7a0bf51278aa92b36e60e830b5 # [your baidu track id]
-
   # Google Analytics
 #  ga_track_id: 'G-ZYM02DSEHS'               # [your google track id]
 

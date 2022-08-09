@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/Renovamen/jekyll-theme-gungnir"
   },
-  "bugs": "https://github.com/Renovamen/jekyll-theme-gungnir/issues",
+  "bugs": "https://github.com/Renovamen/jekyll-theme-custom/issues",
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-banner": "~0.6.0",

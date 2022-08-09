@@ -93,7 +93,7 @@ jQuery(document).ready(function ($) {
   }
 });
 
-// Renovamen: add following things
+// add following things
 
 // // smooth scroll to top or bottom
 // function smoothTo(target) {

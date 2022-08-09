@@ -264,7 +264,7 @@ samp {
     padding-top: 1px;
   }
 
-  // Renovamen: modify reference style
+  // modify reference style
   sup {
     font-size: inherit;
     position: inherit;
@@ -473,7 +473,7 @@ img::-moz-selection {
   margin: 1.5em auto 1.6em auto;
 }
 
-/* Renovamen: emoji img is an exception */
+/* emoji img is an exception */
 .post-container .emoji,
 .post-container .emoji-plus {
   display: inline;
@@ -485,14 +485,14 @@ img::-moz-selection {
   -webkit-overflow-scrolling: touch;
 }
 
-// Renovamen: Katex overflow
+// Katex overflow
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
-// Renovamen: diagrams created by mermaid should be in center
+// diagrams created by mermaid should be in center
 .language-mermaid {
   text-align: center;
 }

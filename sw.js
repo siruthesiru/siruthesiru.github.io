@@ -15,13 +15,13 @@ const CACHE = CACHE_NAMESPACE + "precache-then-runtime";
 const PRECACHE_LIST = [
   "./",
   "./offline.html",
-  "./js/gungnir/gungnir.min.js",
-  "./js/gungnir/snackbar.js",
+  "./js/custom/custom.min.js",
+  "./js/custom/snackbar.js",
   "./css/gungnir.css",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/header-avatar.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/avatar.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/img/home-bg/1.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@gungnir/js/lib.min.js.backup",
+  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/img/header-avatar.png",
+  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/img/avatar.png",
+  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/img/home-bg/1.png",
+  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/js/lib.min.js.backup",
   "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
   "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
   "//https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
@@ -31,7 +31,7 @@ const PRECACHE_LIST = [
 ];
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "jekyll-theme-gungnir.vercel.app",
+  "jekyll-theme-custom.vercel.app",
   "cdn.jsdelivr.net",
 ];
 const DEPRECATED_CACHES = [
