@@ -1,13 +1,13 @@
 # config.yml
 
 backend:
-  name: github
+  name: git-gateway
   repo: siruthesiru/siruthesiru.github.io
   branch: gungnir # Branch to update (optional; defaults to master)
 
 api_root: https://api.github.com
 
-base_url: https://api.github.com
+base_url: https://api.netlify.com
 auth_endpoint: auth
 
 site_url: siruthesiru.github.io
