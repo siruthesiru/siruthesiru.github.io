@@ -29,7 +29,7 @@
       {% endif %}
       {% endif %}
       <div class="menu-btn-child" id="menu-navbar-btn">
-        <i class="fa fa-circle-o"></i>
+        <i class="fa fa-plus"></i>
       </div>
     </div>
   </div>
@@ -44,6 +44,8 @@
   // open navbar
   $("#menu-navbar-btn").click(function () {
     mobileNavToggle();
+    $(this).find("i.fa").toggleClass("fa-plus");
+    $(this).find("i.fa").toggleClass("fa-minus");
   });
 
   // open catalog

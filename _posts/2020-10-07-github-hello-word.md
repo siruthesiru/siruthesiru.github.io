@@ -7,7 +7,6 @@ header-style: text
 header-hide-desc: false
 catalog: true
 katex: true
-code: true
 mermaid: false
 chart: false
 tags:
@@ -22,6 +21,8 @@ Most people would find the picture of our universe as an infinite tower of torto
 
 ---
 
+# H1 Heading
+
 ## H2 Heading
 
 ### H3 Heading
@@ -34,7 +35,7 @@ Most people would find the picture of our universe as an infinite tower of torto
 
 
 # Text formatting
-{% highlight markdown %}
+```
 - **Bold**
 - _Italics_
 - ~~Strikethrough~~
@@ -43,7 +44,6 @@ Most people would find the picture of our universe as an infinite tower of torto
 - <sub>Subscript</sub>
 - Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
 - Citation: <cite>&mdash; Chester How</cite>
-  {% endhighlight %}
 
 - **Bold**
 - _Italics_
@@ -55,7 +55,6 @@ Most people would find the picture of our universe as an infinite tower of torto
 - Citation: <cite>&mdash; Chester How</cite>
 
 # Lists
-{% highlight markdown %}
 1. Ordered list item 1
 2. Ordered list item 2
 3. Ordered list item 3
@@ -63,7 +62,6 @@ Most people would find the picture of our universe as an infinite tower of torto
 * Unordered list item 1
 * Unordered list item 2
 * Unordered list item 3
-  {% endhighlight %}
 
 1. Ordered list item 1
 2. Ordered list item 2
@@ -74,9 +72,8 @@ Most people would find the picture of our universe as an infinite tower of torto
 * Unordered list item 3
 
 # Links
-{% highlight markdown %}
 Check out tale on [GitHub](https://github.com/chesterhow/tale).
-{% endhighlight %}
+```
 
 Check out tale on [GitHub](https://github.com/chesterhow/tale).
 
@@ -84,23 +81,25 @@ Check out tale on [GitHub](https://github.com/chesterhow/tale).
 # Code and Syntax Highlighting
 Use back-ticks for `inline code`. Multi-line code snippets are supported too through Pygments.
 
-{% highlight js %}
+```js
 // Sample javascript code
 var s = "JavaScript syntax highlighting";
 alert(s);
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 # Sample python code
 s = "Python syntax highlighting"
 print s
-{% endhighlight %}
+```
 
-{% highlight js %}
-// Sample javascript code
-var s = "JavaScript syntax highlighting";
-alert(s);
-{% endhighlight %}
+```c
+/* Sample C code */
+#include <stdio.h>
+int main(){
+  printf("C syntax highlighting");
+}
+```
 
 # Blockquotes
 {% highlight markdown %}

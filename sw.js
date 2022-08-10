@@ -18,16 +18,8 @@ const PRECACHE_LIST = [
   "./js/custom/custom.min.js",
   "./js/custom/snackbar.js",
   "./css/gungnir.css",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/img/header-avatar.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/img/avatar.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/img/home-bg/1.png",
-  "//cdn.jsdelivr.net/gh/siruthesiru/siruthesiru.github.io@custom/js/lib.min.js.backup",
   "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
-  "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
   "//https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
-  // "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-brands-400.woff2",
-  // "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-regular-400.woff2",
-  // "//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/webfonts/fa-solid-900.woff2",
 ];
 const HOSTNAME_WHITELIST = [
   self.location.hostname,

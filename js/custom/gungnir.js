@@ -96,18 +96,18 @@ jQuery(document).ready(function ($) {
 // add following things
 
 // // smooth scroll to top or bottom
-// function smoothTo(target) {
-//   var coverOffset;
-//   if (target == "top") coverOffset = 0;
-//   else if (target == "bottom") coverOffset = $(document).height();
-//   else coverOffset = $(target).offset().top;
-//   $("body, html").animate(
-//     {
-//       scrollTop: coverOffset,
-//     },
-//     500
-//   );
-// }
+function smoothTo(target) {
+  var coverOffset;
+  if (target == "top") coverOffset = 0;
+  else if (target == "bottom") coverOffset = $(document).height();
+  else coverOffset = $(target).offset().top;
+  $("body, html").animate(
+    {
+      scrollTop: coverOffset,
+    },
+    500
+  );
+}
 
 // open or close navbar on mobile
 // TO DO: don't let the page go to top when open the navbar on mobile ...
