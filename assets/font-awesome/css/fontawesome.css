@@ -527,6 +527,9 @@ readers do not read off random characters that represent icons */
 .fa-plus::before {
   content: "\2b"; }
 
+.fa-envelope::before {
+    content: "\f0e0"; }
+
 .sr-only,
 .fa-sr-only {
   position: absolute;
