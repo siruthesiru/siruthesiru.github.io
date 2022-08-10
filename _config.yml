@@ -118,6 +118,27 @@ menus:
     font: fa fa-link
     url: /links/
 
+#FONTAWESOME ICONS
+#  - fa-home
+#  - fa-id-card
+#  - fa-archive
+#  - fa-cubes
+#  - fa-link
+#  - fa-github
+#  - fa-twitter
+#  - fa-facebook-square
+#  - fa-linkedin
+#  - fa-weibo
+#  - fa-chevron-left
+#  - fa-chevron-right
+#  - fa-chevron-down
+#  - fa-list-ul
+#  - fa-plus
+#  - fa-minus
+#  - fa-search
+#  - fa-circle
+
+
 #    submenus:
 #      - title: Me
 #        font: fas fa-user-astronaut
