@@ -487,6 +487,7 @@ img::-moz-selection {
 
 // Katex overflow
 .katex-display {
+  background: var(--bg);
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;

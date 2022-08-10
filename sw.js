@@ -18,7 +18,8 @@ const PRECACHE_LIST = [
   "./js/custom/custom.min.js",
   "./js/custom/snackbar.js",
   "./css/gungnir.css",
-  "./css/_bootstrap.css",
+  "./css/bootstrap.css",
+  "./css/home.css",
   "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
   "//https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
 ];

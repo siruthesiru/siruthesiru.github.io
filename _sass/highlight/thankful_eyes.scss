@@ -41,8 +41,7 @@
   }
 
   code {
-    //@include code-font();
-    font-family: "Menlo", "Lucida Console", "Consolas", "Courier New", monospace;
+    @include code-font();
     font-weight: bold;
     font-size: 17px;
     border-radius: 5px;

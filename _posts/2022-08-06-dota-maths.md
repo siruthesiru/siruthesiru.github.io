@@ -7,7 +7,7 @@ header-style: text
 header-hide-desc: false
 catalog: true
 katex: true
-chart: true
+chart: false
 mermaid: false
 comments: true
 tags:

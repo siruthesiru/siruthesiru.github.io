@@ -14,9 +14,6 @@ header-img:
     mask: rgba(0, 0, 0, 0)
 ---
 
-
-
-
 {% for post in paginator.posts %}
 {% if post.hide-in-home %}
 
@@ -62,11 +59,7 @@ header-img:
         {% endif %}
 
         <div class="post-content-preview">
-          {% if post.lang == "en" %}
-            {{ post.content | strip_html | truncate:300 }}
-          {% else %}
             {{ post.content | strip_html | truncate:200 }}
-          {% endif %}
         </div>
       </a>
       <p class="post-meta">
