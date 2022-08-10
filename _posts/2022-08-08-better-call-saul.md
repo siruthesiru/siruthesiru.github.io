@@ -21,3 +21,4 @@ Not gonna lie, dude, my favourite character in the show is Mike Ehrmantraut.
 ![Mike pretending to be a consultant](/img/in-post/2022/mike.png)
 *Mike Ehrmantraut from Better Call Saul*
 {:.desc}
+

@@ -1103,10 +1103,10 @@ $gt-size-avatar-mobi: em(32px);
       background-color: var(--gitalk-comment-bg);
       overflow: auto;
       @include transition(all ease 0.25s);
-      &:hover {
-        -webkit-box-shadow: 0 em(10px) em(60px) 0 var(--gitalk-comment-bg);
-        box-shadow: 0 em(10px) em(60px) 0 var(--gitalk-comment-bg);
-      }
+      //&:hover {
+      //  -webkit-box-shadow: 0 em(10px) em(60px) 0 var(--gitalk-comment-bg);
+      //  box-shadow: 0 em(10px) em(60px) 0 var(--gitalk-comment-bg);
+      //}
       @media (max-width: $MQSmall) {
         margin-left: em(14px);
         padding: em(10px) em(12px);

@@ -68,7 +68,7 @@ sns:
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
+#highlighter: rouge
 permalink: pretty
 paginate: 8
 exclude:
@@ -97,8 +97,8 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM                       # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
-    disable: false                  # we use highlight.js for syntax highlighting, so we disable rouge here
+  hard_wrap: false
+  syntax_highlighter: rouge
 
 # Navigation menu settings
 menus:

@@ -1,31 +1,3 @@
-/*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
- * Copyright 2015 Start Bootstrap
- * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-/*!
- * Hux Blog v1.6.0 (http://startbootstrap.com)
- * Copyright 2016 @huxpro
- * Licensed under Apache 2.0
- */
-
-// Tooltip Init
-// Unuse by Hux since V1.6: Titles now display by default so there is no need for tooltip
-// $(function() {
-//     $("[data-toggle='tooltip']").tooltip();
-// });
-
-// make all images responsive
-/*
- * Unuse by Hux
- * actually only Portfolio-Pages can't use it and only post-img need it.
- * so I modify the _layout/post and CSS to make post-img responsive!
- */
-// $(function() {
-//  $("img").addClass("img-responsive");
-// });
-
 // responsive tables
 $(document).ready(function () {
   $("table").wrap("<div class='table-responsive'></div>");
@@ -109,9 +81,6 @@ function smoothTo(target) {
   );
 }
 
-// open or close navbar on mobile
-// TO DO: don't let the page go to top when open the navbar on mobile ...
-// ... haven't came out with any idea ...
 function mobileNavToggle() {
   // close navbar
   if ($(".main-container").hasClass("open")) {
@@ -133,84 +102,4 @@ function mobileNavToggle() {
   $(".mobile-nav, .main-container").toggleClass("open");
 }
 
-// progress showing on menu
-// function menuListener() {
-//   // scroll percent
-//   var percent =
-//     ($(this).scrollTop() / ($(document).height() - $(this).height())) * 100;
-//   if (percent > 100) percent = 100;
-//
-//   $menuText = $(".menu-text");
-//   $menuBtn = $(".menu-btn-icon");
-//   if (isNaN(percent) || Math.round(percent) <= 0) {
-//     percent = 0;
-//     $menuText.css("display", "none");
-//     $menuBtn.css("display", "block");
-//   } else {
-//     $menuText.css("display", "block");
-//     $menuText.text(Math.round(percent) + "%");
-//     $menuBtn.css("display", "none");
-//   }
-//
-//   // update strokeDasharray
-//   $(".menu-border").css(
-//     "stroke-dasharray",
-//     3.1415926 * (percent || 0) + "% 314.15926%"
-//   );
-// }
-//
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     menuListener();
-//   });
-//   // $('body').css("width", $(window).height() + "px");
-// });
-
 $(".main-container").css("height", $(window).height() + "px");
-
-// code block highlight styles
-// adapted from: https://github.com/mashirozx/Sakura/blob/master/js/sakura-app.js#L137
-function highlightStyle() {
-  function genWrapper(i) {
-    var ele_name = $("pre:eq(" + i + ")")[0].children[0].className;
-
-    // we wouldn't deal with language-chart and language-mermaid
-
-    if (ele_name.indexOf("chart") == -1 && ele_name.indexOf("mermaid") == -1) {
-      var lang = ele_name
-        .substr(0, ele_name.indexOf(" "))
-        .replace("language-", "");
-      if (lang.toLowerCase() == "hljs")
-        var lang = $("pre:eq(" + i + ") code")
-          .attr("class")
-          .replace("hljs", "")
-          ? $("pre:eq(" + i + ") code")
-              .attr("class")
-              .replace("hljs", "")
-          : "text";
-      $("pre:eq(" + i + ")").addClass("highlight-wrap");
-      $("pre:eq(" + i + ")").attr("data-rel", lang.toUpperCase());
-    }
-  }
-  // enable highlight.js
-  $("pre code").each(function (i, block) {
-    hljs.highlightElement(block);
-  });
-  for (var i = 0; i < $("pre").length; i++) {
-    genWrapper(i);
-  }
-  // enable line numbers for highlight.js
-  // hljs.initLineNumbersOnLoad({
-  //   singleLine: true,
-  // });
-  // click to make the code block full screen
-  $("pre").on("click", function (e) {
-    if (e.target !== this) return;
-    $(this).toggleClass("code-block-fullscreen");
-    $("html").toggleClass("code-block-fullscreen-html-scroll");
-  });
-}
-
-$(document).ready(function () {
-  highlightStyle();
-});

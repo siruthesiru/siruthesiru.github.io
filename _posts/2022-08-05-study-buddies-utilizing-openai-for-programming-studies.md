@@ -7,6 +7,7 @@ header-style: text
 header-hide-desc: true
 catalog: true
 code: true
+comments: true;
 tags:
 - Guides
 - "Study Buddies"
@@ -18,7 +19,7 @@ After multiple discussions and group-studying sessions, I've come to the conclus
 
 <br>
 
-![OpenAI](/assets/pics/ai.webp)
+![OpenAI](/img/in-post/2022/ai.webp)
 *OpenAI working with instructions*
 
 <br>
@@ -81,3 +82,7 @@ steps:
 3. Create a pointer-to-node variable `current` for list traversal (I recommend variable creations to be done at the start of the function as much as possible).
 4. Check if the given list is empty. If it is, make the head point to the new node.
 5. If the list isn't empty, traverse til the end and link the last node to the new node.
+
+| Table | Sample |
+|-------|--------|
+| Example of a table| YEah sample here|

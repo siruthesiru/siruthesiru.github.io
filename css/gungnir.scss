@@ -14,7 +14,6 @@
   "components/postlist",
   "components/intro-header",
   "components/menu",
-  "components/comment/duoshuo",
   "components/comment/gitalk",
   "components/author",
 
@@ -24,11 +23,13 @@
   "layouts/portfolio",
   "layouts/404",
 
-  "highlight/{{ site.theme_style.highlight | default: 'dark' }}",
+  //"highlight/{{ site.theme_style.highlight | default: 'dark' }}",
 
   "enhancements/alert/{{ site.theme_style.alert | default: 'flat' }}",
   "enhancements/tag",
   "enhancements/desc",
+
+  "highlight/thankful_eyes",
 
   "style"
 ;

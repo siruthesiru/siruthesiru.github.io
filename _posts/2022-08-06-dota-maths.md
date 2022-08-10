@@ -7,7 +7,7 @@ header-style: text
 header-hide-desc: false
 catalog: true
 katex: true
-chart: false
+chart: true
 mermaid: false
 comments: true
 tags:
@@ -25,7 +25,6 @@ event to occur at least once in 10 attempts. However with true random number gen
 Inline math: $$ E = mc^2 $$
 
 inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-
-Display mode (centered):
+display mode (centered):
 
 $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
