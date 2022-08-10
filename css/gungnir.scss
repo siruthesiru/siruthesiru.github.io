@@ -2,29 +2,33 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "../_sass/common/variables",
-"../_sass/common/mixins",
-"../_sass/components/sidebar",
-"../_sass/components/side-catalog",
-"../_sass/components/snackbar",
-"../_sass/components/search",
-"../_sass/components/navbar",
-"../_sass/components/postlist",
-"../_sass/components/intro-header",
-"../_sass/components/menu",
-"../_sass/components/comment/duoshuo",
-"../_sass/components/comment/gitalk",
-"../_sass/components/author",
-"../_sass/layouts/archive",
-"../_sass/layouts/links",
-"../_sass/layouts/about/index",
-"../_sass/layouts/portfolio",
-"../_sass/layouts/404",
+@import
+  "common/variables",
+  "common/mixins",
+
+  "components/sidebar",
+  "components/side-catalog",
+  "components/snackbar",
+  "components/search",
+  "components/navbar",
+  "components/postlist",
+  "components/intro-header",
+  "components/menu",
+  "components/comment/duoshuo",
+  "components/comment/gitalk",
+  "components/author",
+
+  "layouts/archive",
+  "layouts/links",
+  "layouts/about/index",
+  "layouts/portfolio",
+  "layouts/404",
 
   "highlight/{{ site.theme_style.highlight | default: 'dark' }}",
 
   "enhancements/alert/{{ site.theme_style.alert | default: 'flat' }}",
-"../_sass/enhancements/tag",
-"../_sass/enhancements/desc",
-"_sass/style"
+  "enhancements/tag",
+  "enhancements/desc",
+
+  "style"
 ;
