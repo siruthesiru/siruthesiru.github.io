@@ -1,6 +1,6 @@
 <!-- Side Catalog Container -->
-<div class="col-lg-2 col-lg-offset-0 sidebar-container catalog-container">
-  <div class="side-catalog">
+<div class="col-lg-2 col-lg-offset-0 sidebar-container catalog-container" >
+  <div class="side-catalog" id="side-catalog">
     <hr class="hidden-sm hidden-xs" />
     <h5>
       <a class="catalog-toggle" href="#">CATALOG</a>
@@ -20,11 +20,7 @@
     if ("{{ page.layout }}" == "links") {
       _containerSelector = "div.link-list";
     }
-    // interop with multilangual
     else {
-      // if ("{{ page.multilingual }}" == "true") {
-      //   _containerSelector = "div.post-container.active";
-      // } else {
         _containerSelector = "div.post-container";
       // }
     }
@@ -46,5 +42,26 @@
   $(".catalog-toggle").click(function (e) {
     e.preventDefault();
     $(".side-catalog").toggleClass("fold");
+  });
+
+  $(document).mouseup(function (e) {
+    e.preventDefault();
+
+    let sidecatalog = $(".side-catalog");
+    let parentHasClass = (e.target).closest('.menu-btn-child') !== null;
+    let childHasClass = $(e.target).find('.fa-list-ul') !== null;
+
+    if (!sidecatalog.is(e.target) && sidecatalog.has(e.target).length === 0){
+
+      if(sidecatalog.hasClass("open")){
+        if(childHasClass && parentHasClass){
+          console.log("Works");
+        }else{
+          sidecatalog.toggleClass("open");
+          // console.log("This Works");
+        }
+
+      }
+    }
   });
 </script>

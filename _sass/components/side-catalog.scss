@@ -4,29 +4,39 @@
 }
 
 .side-catalog {
+
+
   &.fixed {
     position: fixed;
     top: 50px;
   }
   &.fold {
-    .catalog-toggle::before {
-      content: "+";
+    .catalog-toggle::after {
+      content: " (show)";
+      position: relative;
+      margin-right: 5px;
+      font-size: 1rem;
+      bottom: 1px;
+      color: var(--body-gray);
     }
     .catalog-body {
       display: none;
     }
+
   }
   .catalog-toggle {
     color: var(--body-gray) !important;
-    &::before {
-      content: "-";
+    &::after {
+      content: " (hide)";
       position: relative;
       margin-right: 5px;
+      font-size: 1rem;
       bottom: 1px;
+      color: var(--body-gray);
     }
   }
   display: block;
-  overflow: auto;
+  overflow: hidden;
   height: 100%;
   padding-bottom: 40px;
   width: 195px;
@@ -74,14 +84,76 @@
 
 @media (max-width: $MQLarge) {
   .side-catalog {
+    @include transition(all ease 0.3s);
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: -2px;
+    width: 40%;
+    background-color: var(--bg);
+    z-index: 3;
+    font-size: 18px;
+    overflow: scroll;
+    display: inline;
+    padding-top: 30vh;
+    padding-bottom: 50%;
+    align-items: center;
+    height: 100%;
+    &.open {
+      @include transform(translateX(0));
+      box-shadow: var(--mobile-catalog-shadow);
+    }
+    hr {
+      display: none;
+    }
+    .catalog-toggle {
+      display: none;
+    }
+    .catalog-body {
+      .toc-list {
+        padding-left: 15px !important;
+        line-height: 5rem;
+
+        width: 100%;
+      }
+      li {
+        a {
+          &.toc-link {
+            color: var(--body-color) !important;
+          }
+          &.is-active-link {
+            color: var(--primary-color) !important;
+          }
+          max-width: 100%;
+
+        }
+        .toc-link::before {
+          opacity: 0;
+        }
+        .is-active-link::before {
+          opacity: 1;
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $MQIpad) {
+  .side-catalog {
     @include transition(all ease 0.5s);
     transform: translateX(100%);
     position: fixed;
     top: 0;
     right: -2px;
-    width: 80%;
+    width: 384px;
     background-color: var(--bg);
     z-index: 3;
+    font-size: 18px;
+    overflow: scroll;
+    display: inline-block;
+    align-items: center;
+    height: 100%;
     &.open {
       @include transform(translateX(0));
       box-shadow: var(--mobile-catalog-shadow);
