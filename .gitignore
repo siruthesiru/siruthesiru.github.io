@@ -5,3 +5,6 @@
 _site
 Gemfile.lock
 .jekyll-cache
+/global/
+/vendor/
+/.idea/
