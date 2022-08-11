@@ -1,15 +1,18 @@
 ---
-[//]: # (use url if beyond this line----------------)
-layout: post
+[//]: # (hide desc if beyond this line--------------)
 title: Hello Word
+layout: post
 subtitle: Welcome to Jekyll Theme Gungnir
 header-img: img/in-post/2022/star.png
 header-style: text
+
 header-hide-desc: false
+
 catalog: true
 katex: true
 mermaid: false
 chart: false
+
 tags:
   - Guides
 ---

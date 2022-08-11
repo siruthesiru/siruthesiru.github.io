@@ -1,11 +1,15 @@
 ---
-layout: post
+[//]: # (hide desc if beyond this line-------------)
 title: Megaman Battle Network & Why I Study IT
+layout: post
 subtitle: How a little GBA game changed my life
 header-img: img/in-post/2022/megaman.png
 header-style: text
+
 header-hide-desc: true
+
 catalog: true
+
 tags:
   - Megaman
   - "Video Games"
