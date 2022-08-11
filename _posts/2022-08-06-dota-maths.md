@@ -1,15 +1,20 @@
 ---
-layout: post
+[//]: # (use url if beyond this line----------------)
 title: Mathematics in Dota 2
+layout: post
 subtitle: Interesting Math Implementations
 header-img: img/in-post/2022/oracle.png
 header-style: text
+
 header-hide-desc: false
+url: false
+
 catalog: true
 katex: true
 chart: false
 mermaid: false
 comments: true
+
 tags:
 - "Dota 2"
 - "Video Games"

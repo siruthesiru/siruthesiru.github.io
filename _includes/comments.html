@@ -19,6 +19,12 @@
     {%- assign _last = _admin_list | size | minus: 1 -%}
     {%- assign _admin_list = _admin_list | slice: 2, _last -%}
 
+    <script src="/js/lib/md5.min.js"></script>
+
+    <script>
+        let hashID = md5(location.pathname);
+    </script>
+
     <script defer type="text/javascript">
 
       var gitalk = new Gitalk({
@@ -27,13 +33,17 @@
         repo: "{{ site.comment.gitalk.repo }}",
         owner: "{{ site.comment.gitalk.owner }}",
         admin: [{{ _admin_list }}],
-        id: location.pathname,
+        id: hashID,
+
         distractionFreeMode: false
       });
 
       // onload = gitalkRender();
 
       $(document).ready(function(){
+          // let hashID = md5(location.pathname);
+          console.log(hashID);
+
           gitalk.render("gitalk-container");
 
           document.querySelector("#comments-container").classList.remove("hiddenComments");

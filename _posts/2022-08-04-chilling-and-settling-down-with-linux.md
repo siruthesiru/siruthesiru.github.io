@@ -1,11 +1,16 @@
 ---
+[//]: # (use url if beyond this line----------------)
 title: Chilling and Settling Down with Linux
 subtitle: How I started using Linux
 layout: post
 header-img: img/in-post/2022/penguin.png
 header-style: text
+
 header-hide-desc: false
+url: false
+
 catalog: true
+
 tags:
 - Stories
 - Linux
