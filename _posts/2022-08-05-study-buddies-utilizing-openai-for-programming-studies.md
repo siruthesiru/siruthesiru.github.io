@@ -13,8 +13,9 @@ code: true
 comments: true;
 
 tags:
-- Guides
-- "Study Buddies"
+  - Guides
+  - Study Buddies
+published: true
 ---
 
 As I go through uni, I've noticed that a lot of my classmates seem to struggle when it comes to preparing for exams that include writing actual code especially for the language C. <!--more-->
