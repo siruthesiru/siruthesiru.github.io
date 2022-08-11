@@ -22,10 +22,19 @@ header-img:
       Support displaying images on homepage
       Borrowed a lot from: https://github.com/Fechin/hexo-theme-diaspora
     -->
+
+
     {% if site.theme_style.post_preview != "text" %}
     <div class="post-preview-img">
         <a href="{{ post.url | prepend: site.baseurl }}">
+          
+          {% if post[0] %}
+          <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover">
+          
+          {% else %}
           <img src="{{ _assets_baseurl }}/{{ post.header-img }}" class="cover" loading="lazy">
+          
+          {% endif %}
         </a>
         <div class="else">
         <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
