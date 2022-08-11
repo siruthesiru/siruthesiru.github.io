@@ -22,47 +22,51 @@ $MQIpad: 1023px;
 $MQLarge: 1200px;
 
 :root {
-  --body-color: rgba(0, 0, 0, 0.9);
-  --body-gray: #797878;
-  --primary-color: #377bb5;
-  --primary-color-dark: #2c6699;
-  --bg: #faf9f6;
-  --bg-secondary: #f1f1f1;
-  --bg-tertiary: #fafafa;
-  --bg-transparent: rgba(255, 255, 255, 0.9);
-  --inline-code-text: #c52950;
-  --inline-code-bg: #f9f2f4;
-  --border-color: #eaeaea;
-  --border-color-dark: #dadada;
-  --dropdown-shadow: 0 1px 20px -8px rgba(0, 0, 0, 0.5);
-  --mobile-catalog-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  --item-shadow: 0 1px 1px 1px rgba(31, 35, 46, 0.1);
-  --item-up-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
-  --gitalk-comment-bg: #f9f9f9;
-  --gitalk-comment-admin-bg: #f6f9fe;
+  --body-color: #dfe2e1;
+  --body-gray: #b8bbba;
+  --primary-color: #74b3eb;
+  --primary-color-dark: #5493ca;
+  --bg: #282828;
+  --bg-secondary: #3c3836;
+  --bg-tertiary: #504945;
+  --bg-transparent: rgb(40, 40, 40, 0.9);
+  --inline-code-text: #ebdbb2;
+  --inline-code-bg: rgba(76, 86, 128, 0.4);
+  --border-color: #3c4a5f;
+  --border-color-dark: #4b5a70;
+  --dropdown-shadow: 0 1px 20px -5px rgba(83, 93, 112, 0.5);
+  --mobile-catalog-shadow: -1px 0px 5px 0px rgba(255, 255, 255, 0.2);
+  --item-shadow: 0 1px 1px 1px rgba(31, 35, 46, 0.3);
+  --item-up-shadow: 0 10px 30px 0px rgba(114, 117, 126, 0.3);
+  --gitalk-comment-bg: #364050;
+  --gitalk-comment-admin-bg: #404d61;
 
-  [data-theme="dark"] {
-    --body-color: #dfe2e1;
-    --body-gray: #b8bbba;
-    --primary-color: #74b3eb;
-    --primary-color-dark: #5493ca;
-    --bg: #282828;
-    --bg-secondary: #3c3836;
-    --bg-tertiary: #504945;
-    --bg-transparent: rgb(40, 40, 40, 0.9);
-    --inline-code-text: #ebdbb2;
-    --inline-code-bg: rgba(76, 86, 128, 0.4);
-    --border-color: #3c4a5f;
-    --border-color-dark: #4b5a70;
-    --dropdown-shadow: 0 1px 20px -5px rgba(83, 93, 112, 0.5);
-    --mobile-catalog-shadow: -1px 0px 5px 0px rgba(255, 255, 255, 0.2);
-    --item-shadow: 0 1px 1px 1px rgba(31, 35, 46, 0.3);
-    --item-up-shadow: 0 10px 30px 0px rgba(114, 117, 126, 0.3);
-    --gitalk-comment-bg: #364050;
-    --gitalk-comment-admin-bg: #404d61;
+  [data-theme="light"] {
+    --body-color: rgba(0, 0, 0, 0.9);
+    --body-gray: #797878;
+    --primary-color: #377bb5;
+    --primary-color-dark: #2c6699;
+    --bg: #faf9f6;
+    --bg-secondary: #f1f1f1;
+    --bg-tertiary: #fafafa;
+    --bg-transparent: rgba(255, 255, 255, 0.9);
+    --inline-code-text: #c52950;
+    --inline-code-bg: #f9f2f4;
+    --border-color: #eaeaea;
+    --border-color-dark: #dadada;
+    --dropdown-shadow: 0 1px 20px -8px rgba(0, 0, 0, 0.5);
+    --mobile-catalog-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    --item-shadow: 0 1px 1px 1px rgba(31, 35, 46, 0.1);
+    --item-up-shadow: 0 15px 45px -10px rgba(10, 16, 34, 0.2);
+    --gitalk-comment-bg: #f9f9f9;
+    --gitalk-comment-admin-bg: #f6f9fe;
   }
 
   [data-theme="sepia"] {
+    --body-color: rgba(0, 0, 0, 0.9);
+    --body-gray: #797878;
+    --primary-color: #377bb5;
+    --primary-color-dark: #2c6699;
     --body-gray: #868174;
     --bg: #f1e7d0;
     --bg-secondary: #e6dcc6;

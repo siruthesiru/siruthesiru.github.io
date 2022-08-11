@@ -22,12 +22,12 @@
       } catch (err) {}
     };
 
-    var darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    var lightQuery = window.matchMedia("(prefers-color-scheme: light)");
 
-    darkQuery.addListener(function (e) {
-      window.__setPreferredTheme(e.matches ? "dark" : "light");
+    lightQuery.addEventListener("load", function (e) {
+      window.__setPreferredTheme(e.matches ? "light" : "dark");
     });
 
-    setTheme(preferredTheme || (darkQuery.matches ? "dark" : "light"));
+    setTheme(preferredTheme || (lightQuery.matches ? "light" : "dark"));
   })();
 </script>

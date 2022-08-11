@@ -1,8 +1,14 @@
 {% if site.comment.provider == "gitalk" %}
 
     <!----------------- Gitalk ----------------->
+    <style>
+        .hiddenComments{
+            display:none;
+        }
+    </style>
 
-    <div class="comment" id="comments-container">
+
+    <div class="comment hiddenComments" id="comments-container">
         <div id="gitalk-container"></div>
     </div>
 
@@ -13,7 +19,7 @@
     {%- assign _last = _admin_list | size | minus: 1 -%}
     {%- assign _admin_list = _admin_list | slice: 2, _last -%}
 
-    <script  type="text/javascript">
+    <script defer type="text/javascript">
 
       var gitalk = new Gitalk({
         clientID: "{{ site.comment.gitalk.clientID }}",
@@ -24,7 +30,15 @@
         id: location.pathname,
         distractionFreeMode: false
       });
-      gitalk.render("gitalk-container");
+
+      // onload = gitalkRender();
+
+      $(document).ready(function(){
+          gitalk.render("gitalk-container");
+
+          document.querySelector("#comments-container").classList.remove("hiddenComments");
+      })
+
     </script>
 
 {% endif %}

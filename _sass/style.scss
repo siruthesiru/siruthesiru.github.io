@@ -154,6 +154,9 @@ samp {
   @media (min-width: 768px) {
     padding-right: 5%;
   }
+  img {
+    width: 100%;
+  }
   a {
     // display: inline-block;
     // safari has bugs on word-break on inline elements.
@@ -281,6 +284,10 @@ samp {
   }
 }
 
+.gitalk-container{
+  background: var(--bg);
+}
+
 // Sections
 
 .section-heading {
@@ -389,6 +396,7 @@ form .row:first-child .floating-label-form-group {
 // Pager Styling
 
 .pager {
+  background: var(--bg);
   margin: 20px 0 0 !important;
   padding: 0px !important;
 

@@ -676,10 +676,10 @@ $gt-size-avatar-mobi: em(32px);
 
 /* styles */
 .gt-container {
+  background-color: var(--bg);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: $gt-size-base;
-  background-color: var(--bg);
   * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

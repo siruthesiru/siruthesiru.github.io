@@ -2,7 +2,7 @@
 title: 'Study Buddies: Utilizing OpenAI for Programming Studies'
 subtitle: But, much like everything, there is a catch.
 layout: post
-header-img: img/in-post/2022/faceless.png
+header-img: img/in-post/2022/bladerunner.png
 header-style: text
 header-hide-desc: true
 catalog: true
@@ -83,6 +83,6 @@ steps:
 4. Check if the given list is empty. If it is, make the head point to the new node.
 5. If the list isn't empty, traverse til the end and link the last node to the new node.
 
-| Table | Sample |
-|-------|--------|
-| Example of a table| YEah sample here|
+| Table              | Sample           |
+|--------------------|------------------|
+| Example of a table | YEah sample here |
