@@ -1,11 +1,15 @@
 ---
-title: 'How I Relate To Better Call Saul'
-subtitle: It really is all good, man!
+[//]: # (hide desc if beyond this line-------------)
+title: 'Humanity and Better Call Saul'
 layout: post
+subtitle: It really is all good, man!
 header-img: img/in-post/2022/saul.png
 header-style: text
+
 header-hide-desc: false
+
 catalog: true
+
 tags:
 - Stories
 - Shows
