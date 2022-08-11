@@ -1,5 +1,56 @@
+<!-- Footer -->
 <footer>
-  <span>
-    &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
-  </span>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright">
+          &copy; <a href="https://github.com/siruthesiru" target="_blank">Sirutonin</a> 2022
+          <br>
+          Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/Renovamen/jekyll-theme-gungnir" target="_blank">Gungnir</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<!-- add dark / light mode switcher -->
+{% include mode.html %}
+
+
+
+
+<!-- Theme JavaScript -->
+<script src="{{ "/js/custom/gungnir.min.js" | prepend: _assets_baseurl }}"></script>
+
+<!-- Service Worker -->
+{% if site.service-worker %}
+<script src="{{ "/js/custom/sw-registration.js" | prepend: _assets_baseurl }}"></script>
+<script src="{{ "/js/custom/snackbar.js" | prepend: _assets_baseurl }}"></script>
+{% endif %}
+
+
+{% if page.title == 'Archive' %}
+<!-- jquery.tagcloud.js -->
+  <script>
+    $.fn.tagcloud.defaults = {
+      //size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#a5a5e4', end: '#4388c4'},
+    };
+    $('#tag_cloud a').tagcloud();
+  </script>
+
+  <script src="{{ "/js/custom/archive.js" | prepend: _assets_baseurl }}"></script>
+{% endif %}
+
+
+<!--fastClick.js -->
+<script>
+  var $nav = document.querySelector("nav");
+  if($nav) FastClick.attach($nav);
+</script>
+
+
+<!-- Google Analytics -->
+{% if site.analytics.ga_track_id %}
+  {% include analytics/google.html %}
+{% endif %}

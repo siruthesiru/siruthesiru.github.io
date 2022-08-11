@@ -1,53 +1,188 @@
 # Site settings
-title:          Siru's Silly Space
-description:    "Safe space for Sirutonin's stupid stories and spiels."
-baseurl:        ""
-url:            "https://siruthesiru.github.io"
+title: Sirutonin
+# SEOTitle: Jekyll theme Gungnir
+description: Siru's personal website.
+# keyword: "jekyll, theme, blog, blog theme"
+url: "https://sirutonin.github.io"      # your host, for absolute URL
+baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
+avatar: "img/avatar.png"                    # the avatar showing on the homepage
+header-switch: false
+timezone: Asia/Manila
 
-# Google Analytics
+# GitHub repository (if the site is hosted by GitHub)
+repository: siruthesiru/siruthesiru
+repository_branch: custom
 
-# Author
-author:
-  name:         Sirutonin
-  url:          https://siruthesiru.github.io
-  email:        sirutonin@gmail.com
+
+# Theme style settings
+theme_style:
+  highlight:    # "dark" (default), "light"
+  alert:        # "flat" (default), "modern"
+  post_preview: # "image" (default), "text"
+                # display post's featured image on homepage or not
+
+
+# Markdown enhancements settings
+math:
+  enable: true    # false (default), true
+                  # math rendering for all posts and keynotes
+  engine: katex        # "katex" (default), "mathjax"
+                  # only make sense when `math.engine: true`
+chart: false       # false (default), true
+mermaid: false     # false (default), true
+emoji-plus: false  # false (default), true
+
+katex:
+  js_path: "{{ Gem::lib_path }}/assets/js"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: true                       # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"                  # errorColor
+
+# CDN settings
+cdn:
+  source:       # "jsdelivr" (default), "bootcdn", "unpkg", "cdnjs"
+  enable:       false # false (default), true
+                # optimizing asset files via jsDelivr or not
+
+# Publish posts or collection documents with a future date.
+future: true
+
+collections:
+  experiences:
+    output: true
+  publications:
+    output: true
+  projects:
+    output: true
+
+
+# SNS settings
+sns:
+#  RSS: false
+  github_username: siruthesiru
+  twitter_username: sirutonin
+#  facebook_username:
+#  linkedin_username:
+  email_address: sirutonin@gmail.com
 
 # Build settings
-markdown:       kramdown
-include:
-  - _pages
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+#highlighter: rouge
+permalink: pretty
+paginate: 8
+exclude:
+  - package.json
+  - package-lock.json
+  - README.md
+  - README-CN.md
+  - LICENSE
+  - Gruntfile.js
+  - Gemfile
+  - Gemfile.lock
+  - /node_modules
+  - global
+  - vendor
 
-
-# Defaults
-
-defaults:
-  -
-    values:
-      layout: "post"
-      comments: false
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
+anchorjs: false # if you want to customize anchor. check out `anchor.html`
 
 # Gems
+# you have to `bundle config set path 'vendor/bundle' && bundle install` before local preview
 plugins:
-  - jekyll-feed
   - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-admin
-  # - jemoji #Uncomment this to allow emoji in your post
+  - jemoji
+  - katex
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM                       # use Github Flavored Markdown !important
+  hard_wrap: false
+  syntax_highlighter: rouge
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+# Navigation menu settings
+menus:
+  - title: Home
+    font: fa fa-home
+    url: /
+  - title: About
+    font: fa fa-id-card
+    url: /about/
+  - title: Archive
+    font: fa fa-archive
+    url: /archive/
+  - title: Projects
+    font: fa fa-cubes
+    url: /projects/
+  - title: Links
+    font: fa fa-link
+    url: /links/
 
-# Disqus (Set to your disqus id)
-disqus:
-  shortname: sirutonin
+#FONTAWESOME ICONS
+#  - fa-home
+#  - fa-id-card
+#  - fa-archive
+#  - fa-cubes
+#  - fa-link
+#  - fa-github
+#  - fa-twitter
+#  - fa-facebook-square
+#  - fa-linkedin
+#  - fa-weibo
+#  - fa-chevron-left
+#  - fa-chevron-right
+#  - fa-chevron-down
+#  - fa-list-ul
+#  - fa-plus
+#  - fa-minus
+#  - fa-search
+#  - fa-circle
 
-timezone: Asia/Manila
+
+#    submenus:
+#      - title: Me
+#        font: fas fa-user-astronaut
+#        url: /about/
+#      - title: Ramblings
+#        font: fas fa-meteor
+#        url: /ramblings/
+
+
+# Comment settings
+comment:
+  provider: gitalk # false (default), "disqus", "gitalk", "valine"
+
+  # Disqus settings
+#  disqus_username: renovamen
+
+  # Gitalk settings
+  # https://github.com/gitalk/gitalk
+  gitalk:
+    perPage: 6
+    clientID: '7aebdc96c93ec32daeb9'
+    clientSecret: '52348fcead7a2d9d82727e250a853e52f4f32e03'
+    repo: siruthesiru-comments
+    owner: siruthesiru
+    admin:
+      - siruthesiru
+
+  # Valine settings
+  # https://valine.js.org/
+#  valine:
+#    appID:
+#    appKey:
+
+
+# Analytics settings
+analytics:
+  # Google Analytics
+#  ga_track_id: 'G-ZYM02DSEHS'               # [your google track id]
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+# Whether or not to enable Hitokoto (the bubble on homepage)
+hitokoto: false # default: false

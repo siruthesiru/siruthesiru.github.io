@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en" id="html" style="background: var(--bg)">
   {% include head.html %}
 
-  <body>
+  <!-- hack iOS CSS :active style -->
+  <body ontouchstart="">
+    <!-- add menu button -->
+    {% include menu.html %}
 
-    {% include navigation.html %}
+    <div class="main-container">
+      {% include navbar/nav.html %}
 
-    <main>
       {{ content }}
-    </main>
 
-    {% include footer.html %}
+      {% include footer.html %}
+    </div>
+
+    <!-- modify styles of navbar on mobile -->
+    {% include navbar/mobile-nav.html %}
+
+    <!-- support search -->
+    {% include search.html %}
+
+  <!-- Migrate from head to bottom, no longer block render and still work -->
+
   </body>
 </html>
+
+<script type="text/javascript">
+  window.onload = function () {
+    setTimeout(1);
+      document.getElementById("html").style.backgroundColor = "";
+  }
+</script>

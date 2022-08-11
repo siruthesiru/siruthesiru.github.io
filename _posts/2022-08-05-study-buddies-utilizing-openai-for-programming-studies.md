@@ -1,11 +1,16 @@
 ---
 title: 'Study Buddies: Utilizing OpenAI for Programming Studies'
+subtitle: But, much like everything, there is a catch.
 layout: post
-comments: false
-tags: Academics
-excerpt_separator: "<!--more-->"
-sticky: true
-hidden: true
+header-img: img/in-post/2022/bladerunner.png
+header-style: text
+header-hide-desc: true
+catalog: true
+code: true
+comments: true;
+tags:
+- Guides
+- "Study Buddies"
 ---
 
 As I go through uni, I've noticed that a lot of my classmates seem to struggle when it comes to preparing for exams that include writing actual code especially for the language C. <!--more-->
@@ -14,7 +19,7 @@ After multiple discussions and group-studying sessions, I've come to the conclus
 
 <br>
 
-![OpenAI](/assets/pics/ai.webp)
+![OpenAI](/img/in-post/2022/ai.webp)
 *OpenAI working with instructions*
 
 <br>
@@ -78,3 +83,6 @@ steps:
 4. Check if the given list is empty. If it is, make the head point to the new node.
 5. If the list isn't empty, traverse til the end and link the last node to the new node.
 
+| Table              | Sample           |
+|--------------------|------------------|
+| Example of a table | YEah sample here |

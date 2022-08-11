@@ -1,0 +1,16 @@
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" crossorigin="anonymous" as="style">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+  $("script[type='math/tex']").replaceWith(function () {
+    var tex = $(this).text();
+    return katex.renderToString(tex, { displayMode: false });
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(function () {
+    var tex = $(this).html();
+    return katex.renderToString(tex.replace(/%.*/g, ""), { displayMode: true });
+  });
+</script>

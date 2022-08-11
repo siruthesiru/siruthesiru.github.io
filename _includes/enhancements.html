@@ -1,0 +1,30 @@
+<!-- add support for mathjax by voleking-->
+<!--{% if site.math.enable or page.math %}-->
+<!--  {% if site.math.engine == "mathjax" %}-->
+<!--    {% include enhancements/mathjax.html %}-->
+<!--  {% else %}-->
+<!--    {% include enhancements/katex.html %}-->
+<!--  {% endif %}-->
+<!--{% endif %}-->
+
+<!-- support for chart and mermaid -->
+{% if page.chart %}
+  {% if site.chart %}
+    {% include enhancements/chart.html %}
+  {% endif %}
+{% endif %}
+
+{% if page.mermaid %}
+  {% if site.mermaid %}
+    {% include enhancements/mermaid.html %}
+  {% endif %}
+{% endif %}
+
+<!-- add support for enhancement emoji -->
+{% if site.emoji-plus %}
+  {% include enhancements/emoji.html %}
+{% endif %}
+
+{% if site.anchorjs %}
+  {% include anchor.html %}
+{% endif %}

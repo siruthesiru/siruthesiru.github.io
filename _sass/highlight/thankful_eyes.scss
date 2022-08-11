@@ -1,0 +1,109 @@
+.highlight {
+  //@include show-scrollbar();
+  overflow-x: scroll;
+
+  ::-webkit-scrollbar {
+    // Chrome, Safari
+    width: unset;
+    display: unset;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: initial;
+    border-radius: 5px;
+    background-color: #122b3b;
+  }
+
+  position: relative;
+  //background: $highlight-background;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  line-height: 1.6;
+  max-width: 100%;
+  padding: 15px 15px 15px 15px;
+  background-color: #122b3b;
+  font-family: Menlo, "Lucida Console",Consolas, "Courier New", monospace;
+  //font-family: "Consolas", "Courier New", monospace;
+
+  @media (max-width: $MQSmall) {
+    border-radius: 4px;
+  }
+
+  &:hover{
+    ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, .5);
+    }
+    -ms-overflow-style: auto; // IE
+    scrollbar-width: auto; // Firefox
+  }
+
+  code {
+    @include code-font();
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    @media (max-width: $MQSmall) {
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    table {
+      td {
+        padding: 5px;
+      }
+
+      pre {
+        margin: 0;
+      }
+    }
+
+
+    .nv, .vc, .vg, .vi, .vm, .err, .gd, .ne, .no {
+      color: #cc6666;
+      font-weight: 2000;
+    }
+
+    .kd, .kp, .kr, .kc, .k {
+      color: #b294bb;
+    }
+
+    .n, .h, .p, .gh, .ni, .nl, .py, .w, .sc, .bp {
+      color: #ffffff;
+    }/* Name, Punctuation, Generic Heading, Name.Builtin, Name.Entity */
+
+    .nb{
+      color: seagreen;
+    }/* NULL */
+
+    .cm, .cp, .c1, .cs, .gp, .c, .sd {
+      color: #969896;
+      font-style: italic;
+    }
+
+    .ge {
+      font-style: italic;
+    }
+
+    .gi, .ld, .s, .sb, .s2, .sh, .sx, .sr, .s1, .ss  {
+      color: #b5bd68;
+    }
+    .gs {
+      font-weight: bold;
+    }
+    .gu, .kn, .nd, .nt, .ow, .o{
+      color: #8abeb7;
+    }
+    .na, .nf, .nx {
+      color: #81a2be;
+    }
+    .nc, .nn, .kt {
+      color: #f0c674;
+    }
+    .mf, .mh, .mi, .mo, .si, .se, .l, .il, .m {
+      color: #de935f;
+    }
+  }
+}

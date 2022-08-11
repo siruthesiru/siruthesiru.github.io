@@ -1,0 +1,65 @@
+
+<script defer src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js" integrity="sha256-ieUctArvXa2Jaww7u+OyjqzBpOW04E9K17BzP8qrxVM=" crossorigin="anonymous" onload="renderSearchPage(document.body)"></script>
+
+
+<div id="search" class="search-page">
+  <i class="search-close fa fa-chevron-down"></i>
+  <p class="search-title text-center"></p>
+
+  <div class="input">
+    <input
+      id="search-input"
+      type="text"
+      class="search-field"
+      placeholder="Search for..."
+      style="background-color: transparent"
+    />
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+  // simple-jekyll-search.js
+
+  function renderSearchPage(){
+    $(document).ready(function(){
+      setTimeout(100);
+
+      SimpleJekyllSearch({
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("search-results"),
+        json: "/search.json",
+        searchResultTemplate:
+                '<li class="result-item item"><a href="{url}" title="{desc}"><div class="result-item-title">{title}</div><div class="result-item-subtitle">{subtitle}</div></a></li>',
+        noResultsText:
+                '<li class="result-item item"><div class="result-item-title">No Results</div></li>',
+        limit: 20,
+        fuzzy: false,
+      });
+    })
+
+  }
+
+  function autoFocus() {
+    setTimeout(function () {
+      document.querySelector(".search-page input").focus();
+    }, 400);
+  }
+
+  // open search page
+  $("#search-btn").click(function () {
+    $(".search-page").toggleClass("open");
+    autoFocus();
+  });
+
+  // open search page (mobile)
+  $("#mobile-search-btn").click(function () {
+    $(".search-page").toggleClass("open");
+    autoFocus();
+  });
+
+  // close search page
+  $(".search-close").click(function () {
+    $(".search-page").toggleClass("open");
+  });
+</script>
