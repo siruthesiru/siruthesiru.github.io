@@ -8,3 +8,4 @@ Gemfile.lock
 _site
 global
 .idea
+vendor
