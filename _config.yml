@@ -13,14 +13,12 @@ timezone: Asia/Manila
 repository: siruthesiru/siruthesiru
 repository_branch: custom
 
-
 # Theme style settings
 theme_style:
   highlight:    # "dark" (default), "light"
   alert:        # "flat" (default), "modern"
   post_preview: # "image" (default), "text"
                 # display post's featured image on homepage or not
-
 
 # Markdown enhancements settings
 math:
@@ -56,8 +54,22 @@ collections:
   projects:
     output: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      header-img: img/home-bg/1.png
+      header-style: text
+      header-hide-desc: false
+      catalog: false
+      katex: false
+      chart: false
+      mermaid: false
+      pinned: false
 
-# SNS settings
+
+
+  # SNS settings
 sns:
 #  RSS: false
   github_username: siruthesiru
