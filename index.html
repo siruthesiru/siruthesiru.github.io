@@ -141,8 +141,9 @@ header-img:
     {% if paginator.previous_page %}
     <li class="previous">
       <a
-        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}"
+        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: "//", "/" }}#container"
       >
+
         &larr; Newer Posts
       </a>
     </li>
@@ -151,7 +152,7 @@ header-img:
     {% if paginator.next_page %}
     <li class="next">
       <a
-        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}"
+        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: "//", "/" }}#container"
       >
         Older Posts &rarr;
       </a>

@@ -7,7 +7,7 @@ header-img: img/in-post/2022/saul.png
 header-style: text
 
 header-hide-desc: false
-pinned: true
+pinned: false
 
 catalog: true
 
