@@ -5,6 +5,7 @@ layout: post
 subtitle: How a little GBA game changed my life
 header-img: img/in-post/2022/megaman.png
 header-style: text
+has-video: true
 
 header-hide-desc: true
 
@@ -26,6 +27,14 @@ I lost the cartridge and got really sad.
 
 I's still trying to learn how to emulate the game's artstyle into mine.
 
-![Lan jacking in](/img/in-post/2022/exe.gif)
-*Lan jacking into his PC*
+<video class="lazy" autoplay="autoplay" loop="loop" width="100%" playsinline poster="/img/home-bg/1.png">
+  <source data-src="/assets/jackin.webm/" type="video/webm">
+</video>
+*Lan jacking into his PC in a WebM*
+{:.desc}
+
+<video class="lazy" autoplay="autoplay" loop="loop" width="100%" playsinline poster="/img/home-bg/1.png">
+  <source data-src="/assets/bass.webm/" type="video/webm">
+</video>
+*Megaman dodging Bass's attacks*
 {:.desc}
