@@ -245,12 +245,15 @@ samp {
   }
   // V1.6 Hux display title by default.
   .pager li {
-    width: 48%;
+        width: 48%;
     &.next {
       float: right;
+      vertical-align: middle;
     }
     &.previous {
       float: left;
+      vertical-align: middle;
+
     }
     > a {
       width: 100%;
@@ -309,7 +312,7 @@ samp {
 
 footer {
   font-size: 20px;
-  padding: 50px 0 35px;
+  padding: 0 0 35px;
   .list-inline {
     margin: 0;
     padding: 0;
@@ -399,6 +402,8 @@ form .row:first-child .floating-label-form-group {
   background: var(--bg);
   margin: 20px 0 0 !important;
   padding: 0px !important;
+  display: block;
+  height: 14rem;
 
   li {
     > a,
@@ -412,9 +417,17 @@ form .row:first-child .floating-label-form-group {
       background-color: transparent;
       border-radius: 3px;
       border-color: var(--border-color-dark);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      min-height: 9rem;
       @media (max-width: $MQMobile) {
         font-size: 14px;
-        padding: 15px 25px;
+        padding: 1em 1em;
+
+        height: 3.6em; /* exactly three lines */
+        overflow: hidden;
+
       }
     }
 

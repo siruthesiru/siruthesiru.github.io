@@ -1,11 +1,25 @@
 {% if site.comment.provider == "gitalk" %}
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js" crossorigin="anonymous"></script>
 
+<button id="loadCommentsButton" onclick="loadComments()">LOAD COMMENTS</button>
 
     <!----------------- Gitalk ----------------->
     <style>
         .hiddenComments{
             display:none;
+        }
+
+        #loadCommentsButton{
+            width: 100%;
+            background: var(--bg-secondary);
+            color: var(--body-color);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #loadCommentsButton:hover{
+            background: var(--primary-color-dark);
         }
     </style>
 
@@ -40,16 +54,19 @@
         distractionFreeMode: false
       });
 
-      // onload = gitalkRender();
+      function loadComments(){
+          $(document).ready(function(){
+              // let hashID = md5(location.pathname);
+              document.querySelector("#loadCommentsButton").classList.add("hiddenComments");
 
-      $(document).ready(function(){
-          // let hashID = md5(location.pathname);
-          console.log(hashID);
+              console.log(hashID);
 
-          gitalk.render("gitalk-container");
+              gitalk.render("gitalk-container");
 
-          document.querySelector("#comments-container").classList.remove("hiddenComments");
-      })
+              document.querySelector("#comments-container").classList.remove("hiddenComments");
+
+          })
+      }
 
     </script>
 

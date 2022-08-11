@@ -29,7 +29,7 @@
       grid-template-columns: repeat(3, 33.33%);
 
       li {
-        margin: 4px;
+        margin: 8px;
         border: 1px solid var(--border-color);
         padding: 10px 30px 10px 20px;
         border-radius: 10px;
@@ -97,6 +97,9 @@
       width: 100%;
       ul {
         grid-template-columns: repeat(1, 100%);
+        li{
+          margin: 15px;
+        }
       }
     }
   }
