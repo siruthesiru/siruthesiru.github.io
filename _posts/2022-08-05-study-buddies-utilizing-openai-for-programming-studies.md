@@ -1,13 +1,18 @@
 ---
+[//]: # (use url if beyond this line----------------)
 title: 'Study Buddies: Utilizing OpenAI for Programming Studies'
 subtitle: But, much like everything, there is a catch.
 layout: post
 header-img: img/in-post/2022/bladerunner.png
 header-style: text
+
 header-hide-desc: true
+url: "Study Buddies: OpenAI"
+
 catalog: true
 code: true
 comments: true;
+
 tags:
 - Guides
 - "Study Buddies"
