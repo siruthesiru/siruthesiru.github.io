@@ -16,7 +16,7 @@ header-img:
 
 {% assign pinned_posts = paginator.posts | where: "pinned" %}
 
-{% for posts in pinned_posts %}
+{% for post in pinned_posts %}
 {% if post.hide-in-home %}
 
 {% else %}
@@ -77,7 +77,7 @@ header-img:
 {% endfor %}
 
 
-{% assign unpinned_posts = paginator.posts | where: "pinned","false" %}
+{% assign unpinned_posts = paginator.posts | where: "pinned", "false" %}
 {% for post in unpinned_posts %}
 {% if post.hide-in-home %}
 
