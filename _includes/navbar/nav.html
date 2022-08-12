@@ -6,6 +6,9 @@
     .notAbout{
         color: white;
     }
+    .notAbout:hover{
+        color: var(--primary-color)
+    }
 </style>
 {% endif %}
 
@@ -95,7 +98,7 @@
           <li>
 
           {% if page.url != "/about/" %}
-            <a id="search-btn" class="" style="color: white">
+            <a id="search-btn" class="notAbout">
               Search
             </a>
           {% else %}

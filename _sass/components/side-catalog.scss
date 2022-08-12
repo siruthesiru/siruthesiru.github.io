@@ -189,3 +189,14 @@
     }
   }
 }
+
+@media (max-width: $MQSmall) {
+  .side-catalog {
+    @include transition(all ease 0.5s);
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: -2px;
+    width: 320px;
+  }
+}
