@@ -1,5 +1,4 @@
 ---
-[//]: # (hide desc if beyond this line-------------)
 title: Stephen Curry's Proof of Greatness
 layout: post
 subtitle: Why he's in my Top 10

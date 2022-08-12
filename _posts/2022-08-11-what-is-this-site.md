@@ -1,5 +1,4 @@
 ---
-[//]: # (hide desc if beyond this line--------------)
 title: What Is This Site?
 layout: post
 subtitle: And other curious queries!

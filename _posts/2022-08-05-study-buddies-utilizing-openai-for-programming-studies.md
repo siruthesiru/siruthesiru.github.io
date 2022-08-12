@@ -1,5 +1,4 @@
 ---
-[//]: # (hide desc if beyond this line-------------)
 title: 'Study Buddies: Utilizing OpenAI for Programming Studies'
 layout: post
 subtitle: But, much like everything, there is a catch.

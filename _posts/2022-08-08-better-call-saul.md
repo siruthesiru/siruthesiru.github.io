@@ -1,5 +1,4 @@
 ---
-[//]: # (hide desc if beyond this line-------------)
 title: 'Humanity and Better Call Saul'
 layout: post
 subtitle: It really is all good, man!
