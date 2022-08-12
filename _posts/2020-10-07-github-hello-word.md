@@ -1,5 +1,4 @@
 ---
-
 title: Hello Word
 layout: post
 subtitle: Welcome to Jekyll Theme Gungnir
