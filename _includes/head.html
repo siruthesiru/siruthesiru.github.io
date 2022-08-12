@@ -49,6 +49,14 @@
   {% if page.homepage == true %}
     <link rel="stylesheet" href="{{ "/css/bshome.css" | prepend: site.baseurl }}"/>
     <link rel="stylesheet" href="{{ "/css/home.css" | prepend: site.baseurl }}"/>
+
+    <link rel="preload" href="{{ "/img/home-bg/1.png" | prepend: site.baseurl }}" as="image" media="(max-width: 1920px)"/>
+
+  {% assign preload_images = paginator.posts | where: "pinned", "true" %}
+  {% for post in preload_images %}
+    <link rel="preload" href="{{ _assets_baseurl }}{{ post.header-img }}" as="image" media="(width: 600)"/>
+  {% endfor %}
+
   {% elsif page.layout == true %}
   <link rel="stylesheet" href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}"/>
   <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}"/>
@@ -56,6 +64,8 @@
     <link rel="stylesheet" href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}"/>
     <link rel="stylesheet" href="{{ "/css/gungnir.css" | prepend: site.baseurl }}"/>
   {% endif %}
+
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
