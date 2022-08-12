@@ -2,10 +2,9 @@
 .bundle
 .DS_Store
 .sass-cache
-_site.backup
+_site
 Gemfile.lock
 .jekyll-cache
-_site
-global
-.idea
-vendor
+/global/
+/.idea/
+/vendor/
