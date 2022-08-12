@@ -16,7 +16,7 @@ const PRECACHE_LIST = [
   "./",
   "./offline.html",
   "./js/custom/custom.min.js",
-  "./js/custom/test.min.js",
+  "./js/custom/jqueryjquery.min.js",
   "./js/custom/snackbar.js",
   "./css/gungnir.css",
   "./css/bootstrap.css",
