@@ -61,8 +61,7 @@ const getCacheBustingUrl = (req) => {
 // versions older than 49, so we need to include a less precise fallback,
 // which checks for a GET request with an Accept: text/html header.
 const isNavigationReq = (req) =>
-  req.mode === "navigate" ||
-  (req.method === "GET" && req.headers.get("accept").includes("text/html"));
+    (req.method === "GET" && req.headers.get("accept").includes("text/html")) || req.mode === "navigate";
 
 // The Util Function to detect if a req is end with extension
 // Accordin to Fetch API spec <https://fetch.spec.whatwg.org/#concept-request-destination>
