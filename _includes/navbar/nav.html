@@ -1,5 +1,14 @@
 <!-- Navigation -->
 {% if page.nav-style == "invert" or page.header-style == "text" %}
+
+{% if page.title != 'About' %}
+<style>
+    .notAbout{
+        color: white;
+    }
+</style>
+{% endif %}
+
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
 {% else %}
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -8,15 +17,27 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll">
 
-      <a class="navbar-brand" href="{{ site.baseurl }}/">$ cd /home/</a>
+        {% if page.url != "/about/" %}
+        <a class="navbar-brand" href="{{ site.baseurl }}/" style="color: white">$ cd /home/</a>
+        {% else %}
+        <a class="navbar-brand" href="{{ site.baseurl }}/" style="color: var(--body-color)">$ cd /home/</a>
+        {% endif %}
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div id="huxblog_navbar">
+    <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="color: white">
+
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
+
+        {% if page.url != "/about/" %}
           {% for page in site.menus %}
-          <li>
+
+          <li style="color: white">
+
             {% if page.url %}
             <a href="{{ page.url | prepend: site.baseurl }}" class="">
             {% else %}
@@ -29,10 +50,11 @@
             <ul class="sub-menu">
               {% for submenu in page.submenus %}
               <li>
-                <a href="{{ submenu.url | prepend: site.baseurl }}" class="">
-<!--                <i class="{{submenu.font}} fa-lg faa-wrench"></i>-->
-                {{ submenu.title }}
-                </a>
+                  <a href="{{ submenu.url | prepend: site.baseurl }}">
+                      <!--                <i class="{{submenu.font}} fa-lg faa-wrench"></i>-->
+                      {{ submenu.title }}
+                  </a>
+
               </li>
               {% endfor %}
             </ul>
@@ -40,10 +62,48 @@
           </li>
           {% endfor %}
 
+        {% else %}
+            {% for page in site.menus %}
+
+            <li>
+
+                {% if page.url %}
+                <a href="{{ page.url | prepend: site.baseurl }}" class="" style="color: var(--body-color)">
+                    {% else %}
+                    <a class="">
+                        {% endif %}
+
+                        {{ page.title }}
+                    </a>
+                    {% if page.submenus %}
+                    <ul class="sub-menu">
+                        {% for submenu in page.submenus %}
+                        <li>
+                            <a href="{{ submenu.url | prepend: site.baseurl }}">
+                                <!--                <i class="{{submenu.font}} fa-lg faa-wrench"></i>-->
+                                {{ submenu.title }}
+                            </a>
+
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+            </li>
+            {% endfor %}
+            {% endif %}
+
           <li>
-            <a id="search-btn" class="">
+
+          {% if page.url != "/about/" %}
+            <a id="search-btn" class="" style="color: white">
               Search
             </a>
+          {% else %}
+              <a id="search-btn" class="" style="color:var(--body-color)">
+                  Search
+              </a>
+          {% endif %}
+
           </li>
         </ul>
       </div>
