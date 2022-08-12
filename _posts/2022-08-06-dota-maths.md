@@ -1,5 +1,5 @@
 ---
-[//]: # (hide desc if beyond this line-------------)
+
 title: Mathematics in Dota 2
 layout: post
 subtitle: Interesting Math Implementations

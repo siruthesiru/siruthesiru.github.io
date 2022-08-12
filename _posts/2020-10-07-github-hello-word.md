@@ -1,5 +1,5 @@
 ---
-[//]: # (hide desc if beyond this line--------------)
+
 title: Hello Word
 layout: post
 subtitle: Welcome to Jekyll Theme Gungnir

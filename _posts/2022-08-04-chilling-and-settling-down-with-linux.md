@@ -1,5 +1,5 @@
 ---
-[//]: # (hide desc if beyond this line-------------)
+
 title: Chilling and Settling Down with Linux
 layout: post
 subtitle: How I started using Linux
