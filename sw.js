@@ -16,12 +16,12 @@ const PRECACHE_LIST = [
   "./",
   "./offline.html",
   "./js/custom/custom.min.js",
+  "./js/custom/test.min.js",
   "./js/custom/snackbar.js",
   "./css/gungnir.css",
   "./css/bootstrap.css",
   "./css/home.css",
-  "//cdn.jsdelivr.net/npm/bootstrap@3.3.2/dist/css/bootstrap.min.css",
-  "//https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+  "./css/post.css"
 ];
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
