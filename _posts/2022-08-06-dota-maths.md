@@ -2,7 +2,7 @@
 //: null
 published: true
 ---
-----------)
+---
 title: Mathematics in Dota 2
 layout: post
 subtitle: Interesting Math Implementations
@@ -31,7 +31,7 @@ event to occur at least once in 10 attempts. However with true random number gen
 
 The first attempt will have a lower chance than the intended percentage. However, succeeding attempts will consistently raise the chance. This is to ensure that the effect will occur at least once in the expected number of attempts.
 
-![Spirit Breaker](/img/in-post/2022/sb.png)
+![Spirit Breaker](/img/in-post/2022/breaker.png)
 *Spirit Breaker*
 {:.desc}
 
