@@ -15,6 +15,7 @@
 <link href="{{ _cdn.tocbot.css }}" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
+
   function generateCatalog(selector) {
     // links page
     if ("{{ page.layout }}" == "links") {
@@ -36,7 +37,9 @@
     return true;
   }
 
-  generateCatalog(".catalog-body");
+  $(document).ready(function (){
+    generateCatalog(".catalog-body");
+  })
 
   // toggle side catalog
   $(".catalog-toggle").click(function (e) {

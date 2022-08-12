@@ -10,6 +10,12 @@ html {
   }
 }
 
+#search-btn {
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
 body {
   @include sans-serif();
   font-size: 16px;
@@ -491,11 +497,11 @@ img::-moz-selection {
   margin: 1.5em auto 1.6em auto;
 }
 
-/* emoji img is an exception */
-.post-container .emoji,
-.post-container .emoji-plus {
-  display: inline;
-}
+///* emoji img is an exception */
+//.post-container .emoji,
+//.post-container .emoji-plus {
+//  display: inline;
+//}
 
 // MathJax Overflow
 .MathJax_SVG_Display {
@@ -509,6 +515,12 @@ img::-moz-selection {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  @font-face {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
 }
 
 // diagrams created by mermaid should be in center

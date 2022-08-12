@@ -189,12 +189,10 @@
       font-size: 14px;
       a {
         text-decoration: none;
-        margin-right: 5px;
-        margin-left: 5px;
       }
+
       .fa-stack {
         @include transition(all ease 0.4s);
-        // margin-left: 10px;
         min-width: 40px;
         &:hover {
           position: relative;

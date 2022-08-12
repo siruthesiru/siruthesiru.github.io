@@ -18,6 +18,7 @@ const PRECACHE_LIST = [
   "./js/custom/custom.min.js",
   "./js/custom/jquery.min.js",
   "./js/custom/snackbar.js",
+  "https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js",
   "./css/gungnir.css",
   "./css/bootstrap.css",
   "./css/home.css",

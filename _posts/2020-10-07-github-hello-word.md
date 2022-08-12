@@ -304,11 +304,6 @@ classDiagram
     }
 ```
 
-## Emoji
-
-:smile: :smirk: :racehorse: :wolf: `斜眼笑`{:.emoji-plus} `doge`{:.emoji-plus} `白眼`{:.emoji-plus}
-
-
 ## Tag
 
 `info`{:.info} `success`{:.success} `warning`{:.warning} `error`{:.error}

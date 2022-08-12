@@ -9,8 +9,8 @@
 {% endif %}
   {% if site.sns.github_username %}
   <a target="_blank" href="https://github.com/{{ site.sns.github_username }}">
-    <span>
-      <i class="fab fa-github fa-2x fa-2x fa-inverse"></i>
+    <span class="fa-stack fa-lg">
+      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
     </span>
   </a>
 
@@ -18,45 +18,40 @@
 
   {% if site.sns.linkedin_username %}
   <a target="_blank" href="https://www.linkedin.com/in/{{ site.sns.linkedin_username }}">
-    <span >
-
-      <i class="fab fa-linkedin-in fa-2x fa-inverse"></i>
+    <span class="fa-stack fa-lg">
+      <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
     </span>
   </a>
   {% endif %}
 
   {% if site.sns.facebook_username %}
   <a target="_blank" href="https://www.facebook.com/{{ site.sns.facebook_username }}">
-    <span >
-
-      <i class="fab fa-facebook-f fa-2x fa-inverse"></i>
+    <span class="fa-stack fa-lg">
+      <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
     </span>
   </a>
   {% endif %}
 
   {% if site.sns.twitter_username %}
   <a target="_blank" href="https://twitter.com/{{ site.sns.twitter_username }}">
-    <span >
-
-      <i class="fab fa-twitter fa-2x fa-inverse"></i>
+    <span class="fa-stack fa-lg">
+      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
     </span>
   </a>
   {% endif %}
 
   {% if site.sns.email_address %}
   <a href="mailto:{{ site.sns.email_address }}">
-    <span >
-
-      <i class="fa fa-envelope fa-2x fa-inverse"></i>
+    <span class="fa fa-stack fa-lg">
+      <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
     </span>
   </a>
   {% endif %}
 
   {% if site.sns.RSS %}
   <a target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
-    <span >
-
-      <i class="fas fa-rss  fa-2x fa-inverse"></i>
+    <span class="fa-stack fa-lg">
+      <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
     </span>
   </a>
   {% endif %}

@@ -12,13 +12,13 @@
 "components/search",
 "components/navbar",
 "components/menu",
-  "components/comment/gitalk",
-  "components/author",
+"components/comment/gitalk",
+//"components/author",
 
 "enhancements/alert/{{ site.theme_style.alert | default: 'flat' }}",
-"enhancements/tag",
+//"enhancements/tag",
 
-  "highlight/thankful_eyes",
+"highlight/thankful_eyes",
 
 "style"
 ;
