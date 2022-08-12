@@ -103,9 +103,13 @@ layout: default
   </div>
 </article>
 
+{% if page.has-video %}
+
 <script>
   const observer = lozad();
   observer.observe();
 </script>
+
+{% endif %}
 
 {% include enhancements.html %}
