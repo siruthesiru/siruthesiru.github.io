@@ -27,14 +27,16 @@ I lost the cartridge and got really sad.
 
 I's still trying to learn how to emulate the game's artstyle into mine.
 
-<video class="lazy" width="100%" playsinline autoplay loop>
+<video width="100%" playsinline autoplay loop>
   <source src="/assets/jackin.webm/" type="video/webm">
+  <source src="/assets/jackin.mp4/" type="video/mp4">
 </video>
 *Lan jacking into his PC in a WebM*
 {:.desc}
 
-<video class="lazy" width="100%" playsinline autoplay loop>
+<video width="100%" playsinline autoplay loop>
   <source src="/assets/bass.webm/" type="video/webm">
+  <source src="/assets/bass.mp4/" type="video/mp4">
 </video>
 *Megaman dodging Bass's attacks*
 {:.desc}
