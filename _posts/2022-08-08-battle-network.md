@@ -3,7 +3,7 @@
 title: Megaman Battle Network & Why I Study IT
 layout: post
 subtitle: How a little GBA game changed my life
-header-img: img/in-post/2022/megaman.png
+header-img: img/in-post/2022/megaman2.png
 header-style: text
 has-video: true
 
@@ -17,7 +17,7 @@ tags:
   - Stories
 ---
 
-![Megaman Battle Network](/img/in-post/2022/megaman.png)
+![Megaman Battle Network](/img/in-post/2022/megaman2.png)
 
 I really like this series.
 
@@ -27,19 +27,19 @@ I lost the cartridge and got really sad.
 
 I's still trying to learn how to emulate the game's artstyle into mine.
 
-<video class="lozad" autoplay="autoplay" loop="loop" width="100%" playsinline data-poster="/img/home-bg/1.png">
+<video class="lozad" autoplay="autoplay" loop="loop" width="100%" playsinline data-poster="/img/lozad.png">
   <source data-src="/assets/jackin.webm/" type="video/webm">
 </video>
 *Lan jacking into his PC in a WebM*
 {:.desc}
 
-<video class="lozad" autoplay="autoplay" loop="loop" width="100%" playsinline>
+<video class="lozad" autoplay="autoplay" loop="loop" width="100%" playsinline data-poster="/img/lozad.png">
   <source data-src="/assets/bass.webm/" type="video/webm">
 </video>
 *Megaman dodging Bass's attacks*
 {:.desc}
 
-<video class="lozad" autoplay="autoplay" loop="loop" width="100%" playsinline data-poster="/img/home-bg/1.png">
+<video class="lozad" autoplay="autoplay" loop="loop" width="100%" playsinline data-poster="/img/lozad.png">
   <source data-src="/assets/jackin2.webm/" type="video/webm">
 </video>
 *Lan jacking into his PC in a WebM*

@@ -28,7 +28,7 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"></script>
 {% endif %}
 
-{% if page.has-video %}
+{% if page.has-video == true %}
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
@@ -51,14 +51,7 @@ layout: default
         {{ content }}
 
         {% if page.has-video %}
-        <script>
-          const observer = lozad('.lozad', {
-            // rootMargin: '10px 0px', // syntax similar to that of CSS Margin
-            threshold: 0.1, // ratio of element convergence
-            enableAutoReload: true // it will reload the new image when validating attributes changes
-          });
-          observer.observe();
-        </script>
+
         {% endif %}
 
 
@@ -109,5 +102,14 @@ layout: default
     </div>
   </div>
 </article>
+
+{% if page.has-video %}
+
+<script>
+  const observer = lozad();
+  observer.observe();
+</script>
+
+{% endif %}
 
 {% include enhancements.html %}
