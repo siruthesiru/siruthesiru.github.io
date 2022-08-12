@@ -67,8 +67,6 @@ defaults:
       mermaid: false
       pinned: false
 
-
-
   # SNS settings
 sns:
 #  RSS: false
@@ -130,27 +128,6 @@ menus:
     font: fa fa-link
     url: /links/
 
-#FONTAWESOME ICONS
-#  - fa-home
-#  - fa-id-card
-#  - fa-archive
-#  - fa-cubes
-#  - fa-link
-#  - fa-github
-#  - fa-twitter
-#  - fa-facebook-square
-#  - fa-linkedin
-#  - fa-weibo
-#  - fa-chevron-left
-#  - fa-chevron-right
-#  - fa-chevron-down
-#  - fa-list-ul
-#  - fa-plus
-#  - fa-minus
-#  - fa-search
-#  - fa-circle
-
-
 #    submenus:
 #      - title: Me
 #        font: fas fa-user-astronaut
@@ -158,7 +135,6 @@ menus:
 #      - title: Ramblings
 #        font: fas fa-meteor
 #        url: /ramblings/
-
 
 # Comment settings
 comment:
@@ -178,23 +154,14 @@ comment:
     admin:
       - siruthesiru
 
-  # Valine settings
-  # https://valine.js.org/
-#  valine:
-#    appID:
-#    appKey:
-
-
 # Analytics settings
 analytics:
   # Google Analytics
 #  ga_track_id: 'G-ZYM02DSEHS'               # [your google track id]
 
-
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
-
 
 # Whether or not to enable Hitokoto (the bubble on homepage)
 hitokoto: false # default: false
