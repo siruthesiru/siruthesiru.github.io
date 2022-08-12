@@ -1,0 +1,203 @@
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900); }
+
+.fa,
+.fas,
+.fa-solid,
+.far,
+.fa-regular,
+.fal,
+.fa-light,
+.fat,
+.fa-thin,
+.fad,
+.fa-duotone,
+.fab,
+.fa-brands {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto; }
+
+.fa-1x {
+  font-size: 1em; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-6x {
+  font-size: 6em; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.fa-8x {
+  font-size: 8em; }
+
+.fa-9x {
+  font-size: 9em; }
+
+.fa-10x {
+  font-size: 10em; }
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em; }
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.08333em;
+  vertical-align: 0.125em; }
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.07143em;
+  vertical-align: 0.05357em; }
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em; }
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.04167em;
+  vertical-align: -0.125em; }
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em; }
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em; }
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0; }
+  .fa-ul > li {
+    position: relative; }
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit; }
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em); }
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em; }
+
+.fa-stack-1x,
+.fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: var(--fa-stack-z-index, auto); }
+
+.fa-stack-1x {
+  line-height: inherit; }
+
+.fa-stack-2x {
+  font-size: 2em; }
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff); }
+
+.fa-archive::before {
+  content: "\f187"; }
+
+.fa-chevron-down::before {
+  content: "\f078"; }
+
+.fa-chevron-left::before {
+  content: "\f053"; }
+
+.fa-chevron-right::before {
+  content: "\f054"; }
+
+.fa-chevron-up::before {
+  content: "\f077"; }
+
+.fa-circle::before {
+  content: "\f111"; }
+
+.fa-cubes::before {
+  content: "\f1b3"; }
+
+.fa-home::before {
+  content: "\f015"; }
+
+.fa-id-card::before {
+  content: "\f2c2"; }
+
+.fa-link::before {
+  content: "\f0c1"; }
+
+.fa-list-ul::before {
+  content: "\f0ca"; }
+
+.fa-search::before {
+  content: "\f002"; }
+
+.fa-minus::before {
+  content: "\f068"; }
+
+.fa-plus::before {
+  content: "\2b"; }
+
+.fa-envelope::before {
+    content: "\f0e0"; }
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0; }
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0; }
