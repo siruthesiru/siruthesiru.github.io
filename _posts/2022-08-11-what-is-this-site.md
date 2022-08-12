@@ -1,5 +1,4 @@
 ---
-
 title: What Is This Site?
 layout: post
 subtitle: And other curious queries!

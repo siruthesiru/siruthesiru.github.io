@@ -1,5 +1,4 @@
 ---
-
 title: 'Humanity and Better Call Saul'
 layout: post
 subtitle: It really is all good, man!

@@ -1,5 +1,4 @@
 ---
-
 title: Megaman Battle Network & Why I Study IT
 layout: post
 subtitle: How a little GBA game changed my life
