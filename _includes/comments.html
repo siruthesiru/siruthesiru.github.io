@@ -44,18 +44,18 @@
 
     <script defer type="text/javascript">
 
-      var gitalk = new Gitalk({
-        clientID: "{{ site.comment.gitalk.clientID }}",
-        clientSecret: "{{ site.comment.gitalk.clientSecret }}",
-        repo: "{{ site.comment.gitalk.repo }}",
-        owner: "{{ site.comment.gitalk.owner }}",
-        admin: [{{ _admin_list }}],
-        id: hashID,
-
-        distractionFreeMode: false
-      });
-
       function loadComments(){
+          var gitalk = new Gitalk({
+              clientID: "{{ site.comment.gitalk.clientID }}",
+              clientSecret: "{{ site.comment.gitalk.clientSecret }}",
+              repo: "{{ site.comment.gitalk.repo }}",
+              owner: "{{ site.comment.gitalk.owner }}",
+              admin: [{{ _admin_list }}],
+          id: hashID,
+
+              distractionFreeMode: false
+          });
+
           $(document).ready(function(){
               // let hashID = md5(location.pathname);
               document.querySelector("#loadCommentsButton").classList.add("hiddenComments");
