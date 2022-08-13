@@ -1,2 +1,0 @@
-
-# Secret Hiding Spot

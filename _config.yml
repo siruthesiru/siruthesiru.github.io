@@ -57,6 +57,8 @@ collections:
     output: true
   projects:
     output: true
+  ramblings:
+    output: true
 
 defaults:
   - scope:
@@ -71,9 +73,12 @@ defaults:
       mermaid: false
       pinned: false
 
+include:
+  - _ramblings
+
   # SNS settings
 sns:
-#  RSS: false
+#  RSS: true
   github_username: siruthesiru
   twitter_username: sirutonin
 #  facebook_username:

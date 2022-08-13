@@ -23,11 +23,11 @@
     }
     i {
       font-size: 28px;
-      color: #ffffff;
+      color: var(--body-color);
       @include transition(0.4s ease);
       &:active,
       &:hover {
-        color: #a7a7a7;
+        color: var(--body-gray);
       }
     }
   }
