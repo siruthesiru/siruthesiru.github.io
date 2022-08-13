@@ -1,7 +1,8 @@
 # Site settings
 title: Sirutonin
+header-name: "Siru's Dev Wall"
 # SEOTitle: Jekyll theme Gungnir
-description: Siru's personal website.
+description: "Siru's personal website."
 # keyword: "jekyll, theme, blog, blog theme"
 url: "https://sirutonin.github.io"      # your host, for absolute URL
 baseurl: ""                                         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -19,10 +20,10 @@ repository_branch: custom
 
 # Theme style settings
 theme_style:
-  highlight:    # "dark" (default), "light"
-  alert:        # "flat" (default), "modern"
-  post_preview: # "image" (default), "text"
-                # display post's featured image on homepage or not
+  highlight:      # "dark" (default), "light"
+  alert:          # "flat" (default), "modern"
+  post_preview:   # "image" (default), "text"
+                  # display post's featured image on homepage or not
 
 # Markdown enhancements settings
 math:

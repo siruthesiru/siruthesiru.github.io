@@ -22,7 +22,7 @@
   border-radius: 5px;
   line-height: 1.6;
   max-width: 100%;
-  padding: 15px 15px 15px 15px;
+  padding: 0 7.5px 5px 7.5px;
   background-color: #122b3b;
   font-family: Menlo, "Lucida Console",Consolas, "Courier New", monospace;
   //font-family: "Consolas", "Courier New", monospace;
@@ -43,7 +43,7 @@
   code {
     @include code-font();
     font-weight: bold;
-    font-size: 17px;
+    font-size: 14px;
     border-radius: 5px;
     @media (max-width: $MQSmall) {
       font-size: 14px;
@@ -56,7 +56,6 @@
       }
 
       pre {
-        margin: 0;
       }
     }
 

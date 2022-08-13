@@ -153,6 +153,10 @@ kbd,
 pre,
 samp {
   font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+
+  .language-plaintext {
+    background-color: var(--bg-tertiary);
+  }
 }
 
 // In the post.
@@ -299,7 +303,7 @@ samp {
 
 .section-heading {
   font-size: 36px;
-  margin-top: 60px;
+  margin-bottom: 60px;
   font-weight: 700;
 }
 
@@ -533,4 +537,15 @@ hr {
   background-color: var(--border-color);
   border: 0;
   height: 1px;
+}
+
+code, kbd, pre, samp {
+  font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+  &.language-plaintext {
+    color: maroon;
+    background: lightgrey;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+  }
 }
