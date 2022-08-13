@@ -83,11 +83,98 @@
     }
   }
 
+  .ramblings-list {
+    padding: 10px 0 50px;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+
+    .section-title {
+      font-weight: 400;
+      font-size: 24px;
+      padding-left: 10px;
+      margin: 50px 0 20px;
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(4, 25%);
+
+      li {
+        margin: 8px;
+        border: 1px solid black;
+        padding: 10px 30px 10px 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        @include transition(all 0.3s);
+        background-color: whitesmoke;
+        color: #262626;
+
+        &:hover {
+          border: 1px solid transparent;
+          @include transform(translate(0px, -2px));
+          box-shadow: var(--item-up-shadow);
+        }
+
+        span.sitename {
+          padding-bottom: 5px;
+          display: block;
+          line-height: 2.5rem;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        .desc {
+          font-size: 14px;
+          padding-top: 5px;
+          //border-top: 1px solid #ddd;
+          line-height: 2rem;
+        }
+      }
+    }
+    ul.markdown {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  @media (max-width: $MQLarge) {
+    .ramblings-list {
+      width: 100%;
+      ul {
+        grid-template-columns: repeat(4, 25%);
+        li{
+          margin: 5px;
+        }
+      }
+      .markdown {
+        grid-template-columns: repeat(1, 100%);
+      }
+    }
+  }
+
   @media (max-width: $MQIpad) {
     .link-list {
       width: 85%;
       ul {
         grid-template-columns: repeat(2, 49.5%)
+      }
+    }
+    .ramblings-list {
+      width: 100%;
+      ul {
+        grid-template-columns: repeat(3, 33%);
+        li{
+          margin: 5px;
+        }
+      }
+      .markdown {
+        grid-template-columns: repeat(1, 100%);
+        margin-bottom: 10px;
+
       }
     }
   }
@@ -102,5 +189,18 @@
         }
       }
     }
+    .ramblings-list {
+      width: 100%;
+      ul {
+        grid-template-columns: repeat(2, 50%);
+        li{
+          margin: 5px;
+        }
+      }
+      .markdown {
+        grid-template-columns: repeat(1, 100%);
+      }
+    }
   }
 }
+

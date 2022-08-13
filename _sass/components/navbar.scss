@@ -9,6 +9,7 @@
   height: 100%;
   // overflow: hidden;
   background-color: transparent;
+  margin-top: 0;
 }
 
 @media (max-width: $MQDesktop) {
@@ -278,10 +279,10 @@
     backface-visibility: hidden;
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
+      margin-top: 0;
       position: fixed;
-      top: -61px;
+      top: -63px;
       background-color: var(--bg-transparent);
-      border-bottom: 1px solid var(--border-color);
       -webkit-transition: -webkit-transform 0.3s;
       -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
@@ -310,6 +311,47 @@
       -ms-transform: translate3d(0, 100%, 0);
       -o-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
+      margin-top: 0;
+    }
+  }
+}
+
+.navbar-custom-notabout {
+  @media only screen and (min-width: 1170px) {
+    @include transition(background-color 0.3s);
+    /* Force Hardware Acceleration in WebKit */
+    @include transform(translate3d(0, 0, 0));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    &.is-fixed {
+      /* when the user scrolls down, we hide the header right above the viewport */
+      margin-top: 0;
+      position: fixed;
+      top: -63px;
+      background-color: rgba(0,0,0,.9);
+      -webkit-transition: -webkit-transform 0.3s;
+      -moz-transition: -moz-transform 0.3s;
+      transition: transform 0.3s;
+    }
+    .nav {
+      li {
+        a {
+          &:hover,
+          &:focus {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+    &.is-visible {
+      /* if the user changes the scrolling direction, we show the header */
+      -webkit-transform: translate3d(0, 100%, 0);
+      -moz-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      -o-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      margin-top: 0;
+      background-color: rgba(0, 0, 0, 0.9);
     }
   }
 }

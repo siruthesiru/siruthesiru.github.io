@@ -21,10 +21,9 @@ As I go through uni, I've noticed that a lot of my classmates seem to struggle w
 
 After multiple discussions and group-studying sessions, I've come to the conclusion that it's mostly due to the fact that they don't have samples of code to base their studies on. That's where OpenAI comes into play.
 
-<br>
-
 ![OpenAI](/img/in-post/2022/ai.webp)
 *OpenAI working with instructions*
+{:.desc}
 
 <br>
 

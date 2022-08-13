@@ -1,0 +1,63 @@
+---
+layout: default
+title: Ramblings
+---
+
+<!-- Borrowed a lot from: https://github.com/mashirozx/Sakura/ -->
+
+<!-- Page Header -->
+{% include intro-header.html type='page' short=true %}
+
+<script type="text/javascript" src="/js/lib/jquery.tagcloud.js"></script>
+
+<div class="links-page container">
+  <div class="ramblings-list">
+
+    {% if page.ramblings %}
+      {% for group in page.ramblings %}
+        <h2 class="section-title">{{group.type}}</h2>
+        <ul>
+          {% for item in group.items %}
+            <li>
+              <span class="sitename">{{item.title}}</span>
+              <div class="desc">{{item.desc1}}</div>
+              <div class="desc">{{item.desc2}}</div>
+            </li>
+          {% endfor %}
+        </ul>
+
+      {% endfor %}
+    {% endif %}
+
+      <h2 class="section-title">Ideas</h2>
+
+      <ul class="markdown">
+          <li style="min-height: 400px">
+              <div>
+                  {% capture plannedFeatures %}{% include docs/features.md %}{% endcapture %}
+                  {{ plannedFeatures | markdownify }}
+              </div>
+          </li>
+
+          <li style="min-height: 400px">
+            <div class="post-container-rambling">
+              {% capture plannedArticles %}{% include docs/articles.md %}{% endcapture %}
+              {{ plannedArticles | markdownify }}
+            </div>
+          </li>
+
+          <li style="min-height: 400px">
+              <div class="post-container-rambling">
+                  {% capture plannedProjects %}{% include docs/projects.md %}{% endcapture %}
+                  {{ plannedProjects | markdownify }}
+              </div>
+          </li>
+      </ul>
+
+    <hr style="visibility: hidden;">
+
+    {% if site.comment.provider and page.comment %}
+      {% include comments.html %}
+    {% endif %}
+  </div>
+</div>
