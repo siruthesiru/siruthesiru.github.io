@@ -19,8 +19,6 @@ tags:
 ---
 
 ![Cardboard House](/img/in-post/2022/house.png)
-*A little cardboard house I found in an abandoned building.*
-{:.desc}
 
 This site is a house for my thoughts.
 
