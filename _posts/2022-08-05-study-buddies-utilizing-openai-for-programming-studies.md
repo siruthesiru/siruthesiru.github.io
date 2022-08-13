@@ -6,6 +6,7 @@ header-img: img/in-post/2022/bladerunner.png
 header-style: text
 
 header-hide-desc: true
+pinned: true
 
 catalog: true
 code: true

@@ -145,13 +145,15 @@
     .ramblings-list {
       width: 100%;
       ul {
-        grid-template-columns: repeat(4, 25%);
+        //grid-template-columns: repeat(4, 25%);
         li{
           margin: 5px;
         }
-      }
-      .markdown {
-        grid-template-columns: repeat(1, 100%);
+
+        &.markdown{
+          grid-template-columns: repeat(1, 100%);
+        }
+
       }
     }
   }
@@ -166,18 +168,18 @@
     .ramblings-list {
       width: 100%;
       ul {
-        grid-template-columns: repeat(3, 33%);
-        li{
+
+        li {
           margin: 5px;
         }
-      }
-      .markdown {
-        grid-template-columns: repeat(1, 100%);
-        margin-bottom: 10px;
 
+      }
+      .links-page .ramblings-list ul.markdown {
+        grid-template-columns: repeat(1, 50%);
       }
     }
   }
+
 
   @media (max-width: $MQSmall) {
     .link-list {
@@ -191,16 +193,19 @@
     }
     .ramblings-list {
       width: 100%;
+
       ul {
         grid-template-columns: repeat(2, 50%);
-        li{
+
+        li {
           margin: 5px;
         }
-      }
-      .markdown {
-        grid-template-columns: repeat(1, 100%);
+        .links-page .ramblings-list ul.markdown {
+          grid-template-columns: repeat(1, 50%);
+        }
       }
     }
+
   }
 }
 
