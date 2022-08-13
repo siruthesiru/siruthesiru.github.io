@@ -14,7 +14,7 @@ header-img:
     mask: rgba(0, 0, 0, 0)
 ---
 
-{% assign pinned_posts = paginator.posts | where: "pinned", "true" %}
+{% assign pinned_posts = site.posts | where: "pinned", "true" %}
 
 
 {% for post in pinned_posts %}

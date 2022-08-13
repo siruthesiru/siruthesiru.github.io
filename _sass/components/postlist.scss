@@ -66,15 +66,17 @@
   padding: 0 40px;
   > a {
     display: inline-block;
-    width: 600px;
+    width: 500px;
     height: 340px;
     overflow: hidden;
     position: relative;
     z-index: 1;
     border-radius: 5px;
     .cover {
+
       display: block;
       height: inherit;
+
       @include transition(all 0.6s);
       &:hover {
         transform: scale(1.1);
@@ -84,13 +86,13 @@
   &:nth-child(odd) {
     text-align: left;
     .else {
-      left: 620px;
+      left: 520px;
     }
   }
   &:nth-child(even) {
     text-align: right;
     .else {
-      right: 620px;
+      right: 520px;
     }
   }
   .else {
@@ -98,7 +100,7 @@
     text-align: left;
     top: 10px;
     height: 320px;
-    width: 490px;
+    width: 590px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     overflow-y: hidden;
@@ -160,24 +162,27 @@
   }
   @media (max-width: $MQLarge) {
     > a {
-      width: 480px;
+      width: 420px;
       height: 280px;
     }
     .cover {
+      position: static;
+      margin-left: -35px;
       display: block;
       height: 280px;
       width: 480px;
     }
     &:nth-child(odd) .else {
-      left: 500px;
+      left: 450px;
     }
     &:nth-child(even) .else {
-      right: 500px;
+      right: 450px;
     }
     .else {
       top: 10px;
       width: 420px;
       height: 260px;
+
       .post-meta {
         font-size: 12px;
         margin: 2.5rem 100px 0 60px;
@@ -236,6 +241,7 @@
     .cover {
       height: 320px;
       width: 580px;
+      margin-left: 0;
     }
     .else {
       height: auto;
@@ -260,7 +266,7 @@
   @media (max-width: $MQSmall) {
     margin-top: 100px;
     border-bottom: none;
-    max-width: 400px;
+    width: 100%;
     > a {
       width: 360px;
       height: 210px;
