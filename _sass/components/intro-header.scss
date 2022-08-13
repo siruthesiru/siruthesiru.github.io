@@ -70,7 +70,7 @@
   }
   .post-heading {
     h1 {
-      font-size: 55px;
+      font-size: 50px;
       margin-bottom: 24px;
     }
     .subheading,
@@ -127,7 +127,7 @@
   .header-avatar {
     position: absolute;
     top: 50%;
-    margin-top: -140px;
+    margin-top: -200px;
     left: 50%;
     margin-left: -65px;
     width: 130px;
@@ -152,24 +152,25 @@
   }
   // Description and social links on home page (hide on phone)
   .header-info {
-    width: 39%;
+    width: 40%;
     max-width: 500px;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     top: 50%;
-    margin-top: 15px;
+    margin-top: -55px;
     // Background
     .header-info-back {
       font-size: 16px;
       background: rgba(0, 0, 0, 0.625);
-      padding: 15px;
+      padding: 20px 15px 15px 15px;
       letter-spacing: 0;
       line-height: 30px;
       border-radius: 10px;
       box-sizing: initial;
       white-space: nowrap;
+
       .home-site-heading {
         padding-top: 0;
         padding-bottom: 0;
@@ -187,13 +188,14 @@
       margin-top: 12px;
       // margin-left: -20px;
       font-size: 14px;
+      padding: 0;
       a {
         text-decoration: none;
       }
 
       .fa-stack {
         @include transition(all ease 0.4s);
-        min-width: 40px;
+        min-width: 10px;
         &:hover {
           position: relative;
           cursor: pointer;
@@ -250,20 +252,26 @@
   .headertop-down {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    margin-left: -14px;
-    cursor: pointer;
+    text-align: center;
+    padding-left: 40px;
     @media (max-width: $MQIpad) {
       display: none;
     }
-    i {
-      font-size: 28px;
+    a {
+      cursor: pointer;
       color: #ffffff;
       @include transition(0.4s ease);
       &:active,
       &:hover {
         color: #a7a7a7;
+        text-decoration: none;
       }
+    }
+    i {
+      font-size: 28px;
+    }
+    p {
+      margin-bottom: 5px;
     }
   }
   .header-bubble {

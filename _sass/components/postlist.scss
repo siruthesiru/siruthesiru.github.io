@@ -61,7 +61,7 @@
 // With image
 // add styles for the images displaying on homepage
 .post-preview-img {
-  margin: 80px auto 100px;
+  margin: 40px auto 40px;
   position: relative;
   padding: 0 40px;
   > a {
@@ -97,7 +97,7 @@
     position: absolute;
     text-align: left;
     top: 10px;
-    height: 360px;
+    height: 320px;
     width: 490px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -105,7 +105,7 @@
     .post-meta {
       color: var(--body-gray);
       font-size: 12px;
-      margin: 5rem 100px 0 80px;
+      margin: 3.5rem 100px 0 80px;
     }
     a:hover,
     a:focus {
@@ -177,10 +177,10 @@
     .else {
       top: 10px;
       width: 420px;
-      height: 290px;
+      height: 260px;
       .post-meta {
         font-size: 12px;
-        margin: 50px 0 0 60px;
+        margin: 2.5rem 100px 0 60px;
       }
 
       .post-title {
@@ -195,7 +195,10 @@
         text-overflow: ellipsis;
       }
       .post-subtitle{
-        white-space: nowrap;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+
         overflow: hidden;
         text-overflow: ellipsis;
       }
@@ -217,7 +220,7 @@
   }
   @media (max-width: $MQIpad) {
     padding: 0 15px;
-    width: 100%;
+    width: 85%;
     margin-top: 80px;
     background: var(--bg);
     padding-bottom: 30px;

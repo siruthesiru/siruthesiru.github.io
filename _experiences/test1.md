@@ -1,5 +1,5 @@
 ---
-img: img/experience/test1.png
+img: img/experience/company1.png
 time: 2019.9 - 2020.9
 institution: Gryffindor Quidditch Team
 job: Seeker
