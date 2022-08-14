@@ -42,26 +42,26 @@
       }
     }
   }
-  @media (max-width: $MQMobile) {
-    > a {
-      > .post-title {
-        font-size: 21px;
-        margin-bottom: 8px;
-      }
-      > .post-subtitle {
-        font-size: 15px;
-      }
-    }
-    .post-meta {
-      font-size: 16px;
-    }
-  }
+  //@media (max-width: $MQMobile) {
+  //  > a {
+  //    > .post-title {
+  //      font-size: 21px;
+  //      margin-bottom: 8px;
+  //    }
+  //    > .post-subtitle {
+  //      font-size: 15px;
+  //    }
+  //  }
+  //  .post-meta {
+  //    font-size: 16px;
+  //  }
+  //}
 }
 
 // With image
 // add styles for the images displaying on homepage
 .post-preview-img {
-  margin: 40px auto 40px;
+  margin: 40px auto 40px auto;
   position: relative;
   padding: 0 40px;
   > a {
@@ -100,7 +100,7 @@
     text-align: left;
     top: 10px;
     height: 320px;
-    width: 590px;
+    width: 600px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     overflow-y: hidden;
@@ -115,7 +115,7 @@
       color: var(--primary-color);
     }
     .post-title {
-      font-size: 30px;
+      font-size: 26px;
       font-weight: normal;
       line-height: 1.1;
       margin: 10px 100px 0 80px;
@@ -189,7 +189,7 @@
       }
 
       .post-title {
-        font-size: 24px;
+        font-size: 22px;
         margin: 10px 60px 0 60px;
 
         display: -webkit-box;
@@ -203,6 +203,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
+        font-size: 16px;
 
         overflow: hidden;
         text-overflow: ellipsis;
@@ -273,12 +274,13 @@
     width: 100%;
     padding: 0 0 0 0;
     > a {
-      width: 100%;
+      width: 90vw;
       height: auto;
-      margin: 0 15px 0 15px;
+      margin: 0 0 0 25px;
     }
     .cover{
-      width: 100%;
+      width: 90vw;
+      height: auto;
       margin: 0 0 0 0;
     }
     .else {
