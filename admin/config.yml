@@ -1,7 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   repo: siruthesiru/siruthesiru.github.io
-  branch: development
+  branch: master
 
 publish_mode: editorial_workflow
 
