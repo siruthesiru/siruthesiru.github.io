@@ -1,7 +1,7 @@
 ---
-title: "Who, What, Where, Why Is This Site?"
+title: "Fascination of the Week: Site Optimization"
 layout: post
-subtitle: And other curious queries!
+subtitle: "Stay Optimiztic!"
 header-img: img/in-post/2022/house.png
 header-style: text
 
@@ -16,11 +16,22 @@ chart: false
 tags:
   - Guides
   - Development
+  - Fascinations
 ---
 
 ![Cardboard House](/img/in-post/2022/house.png)
 
-This site is a house for my thoughts.
+## What is this site?
+
+This site is a house for my thoughts. a
+
+What started off as a basic one-page portfolio listing my projects and information turned into 6 sleepless days worth of blog goodness complete with: 
+- a per-post markdown parser through Jekyll,
+- functional, sorted archive with a tag cloud,
+- links page for interesting sites,
+- responsive search function
+
+And all of these on a **completely responsive** interface.
 
 ## Optimizations
 
