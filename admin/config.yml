@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: siruthesiru/siruthesiru.github.io
   branch: development
 
 publish_mode: editorial_workflow
