@@ -10,11 +10,9 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-- type: directory
-  path: _ramblings
+- type: document
+  path: ramblings.html
   label: Ramblings
-  create: all
-  match: "**/*"
 - type: directory
   path: _projects
   label: Projects
@@ -30,6 +28,11 @@ sections:
   label: Experiences
   create: all
   match: "**/*"
+- type: directory
+  path: _ramblings
+  label: "[UNINITIALIZED] Ramblings"
+  create: all
+  match: "**/*"
 upload_dir: img
 public_path: "/img"
 front_matter_path: ''
@@ -42,6 +45,5 @@ build:
   install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
-  working_dir: "/srv"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     -d _site
