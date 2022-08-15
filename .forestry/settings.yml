@@ -42,7 +42,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
-  install_dependencies_command: bundle config set --local path 'vendor/bundle'; bundle
+  install_dependencies_command: bundle config set --local path 'vendor/cache'; bundle
     install
   preview_docker_image: jekyll/builder:stable
   mount_path: "/srv/"
