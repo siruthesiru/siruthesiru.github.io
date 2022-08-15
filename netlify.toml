@@ -18,3 +18,7 @@
   [headers.values]
     Cache-Control = "public, s-maxage=604800"
 
+[[headers]]
+  for = "*.css" # js files should be set this way
+  [headers.values]
+    Cache-Control = "public, s-maxage=21600"
