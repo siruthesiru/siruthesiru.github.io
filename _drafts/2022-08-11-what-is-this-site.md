@@ -1,24 +1,21 @@
 ---
-title: "Fascination of the Week: Site Optimization"
+title: 'Weekly Fascinations: Site Optimization'
 layout: post
-subtitle: "Stay Optimiztic!"
+subtitle: Stay Optimiztic!
 header-img: img/in-post/2022/house.png
 header-style: text
-
 header-hide-desc: false
 pinned: true
-
 catalog: true
 katex: false
 mermaid: false
 chart: false
-
 tags:
-  - Guides
-  - Development
-  - Fascinations
----
+- Guides
+- Development
+- Fascinations
 
+---
 ![Cardboard House](/img/in-post/2022/house.png)
 
 ## What is this site?
