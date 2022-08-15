@@ -1,0 +1,40 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: subtitle
+  label: subtitle
+- type: file
+  name: header-img
+  label: header-img
+- type: text
+  name: header-style
+  label: header-style
+- type: boolean
+  name: header-hide-desc
+  label: header-hide-desc
+- type: boolean
+  name: catalog
+  label: catalog
+- type: boolean
+  name: katex
+  label: katex
+- type: boolean
+  name: chart
+  label: chart
+- type: boolean
+  name: mermaid
+  label: mermaid
+- type: boolean
+  name: comments
+  label: comments
+- type: list
+  name: tags
+  label: tags
