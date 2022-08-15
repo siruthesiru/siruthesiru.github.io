@@ -1,5 +1,5 @@
 ---
-title: 'Weekly Fascinations: Site Optiminization'
+title: 'Web Optiminization: An Introduction'
 layout: post
 subtitle: Stay Optimiztic!
 header-img: img/in-post/2022/house.png
