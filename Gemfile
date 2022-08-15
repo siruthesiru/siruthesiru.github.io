@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'kramdown'
-gem 'jemoji'
 gem 'jekyll-paginate'
 
 gem "webrick", "~> 1.7"
@@ -15,6 +14,6 @@ gem "jekyll-katex"
 
 gem "katex"
 
-gem 'therubyracer'
+gem 'therubyrhino'
 
 gem 'rack-cors'
