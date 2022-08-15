@@ -16,4 +16,6 @@ gem "katex"
 
 gem 'therubyracer'
 
+gem 'execjs'
+
 gem 'rack-cors'
