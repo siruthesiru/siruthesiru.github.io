@@ -10,10 +10,9 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-- type: directory
-  path: _ramblings
+- type: document
+  path: ramblings.html
   label: Ramblings
-  create: all
   match: "**/*"
 - type: directory
   path: _projects
@@ -28,6 +27,11 @@ sections:
 - type: directory
   path: _experiences
   label: Experiences
+  create: all
+  match: "**/*"
+- type: directory
+  path: _ramblings
+  label: "[UNINITIALIZED] Ramblings"
   create: all
   match: "**/*"
 upload_dir: img
