@@ -39,5 +39,6 @@ fields:
   name: tags
   label: tags
 pages:
+- _posts/optimizations-dithering.md
 - _posts/optimizations-scripts.md
 - _posts/optimizations-stylesheets.md
