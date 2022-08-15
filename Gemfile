@@ -12,6 +12,10 @@ gem "jekyll"
 
 # gem "jekyll-katex"
 
+gem "http_parser.rb"
+
+gem "em-websocket"
+
 gem "katex"
 
 gem 'therubyrhino'
