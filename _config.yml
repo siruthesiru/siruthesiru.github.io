@@ -73,6 +73,7 @@ defaults:
       chart: false
       mermaid: false
       pinned: false
+      header-mask: rgba(0, 0, 0, 0.4)
 
 include:
   - _ramblings
