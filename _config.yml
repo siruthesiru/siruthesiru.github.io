@@ -10,10 +10,6 @@ avatar: "img/avatar.png"                    # the avatar showing on the homepage
 header-switch: false
 timezone: Asia/Manila
 
-webrick:
-  headers:
-    Cache-Control: max-age=604800
-
 # GitHub repository (if the site is hosted by GitHub)
 repository: siruthesiru/siruthesiru
 repository_branch: custom

@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'kramdown'
 gem 'jekyll-paginate'
 
-gem "webrick", "~> 1.7"
+gem "webrick"
 
 gem "parser", "~> 3.1"
 
