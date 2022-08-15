@@ -39,4 +39,5 @@ fields:
   name: tags
   label: tags
 pages:
+- _posts/optimizations-scripts.md
 - _posts/optimizations-stylesheets.md
