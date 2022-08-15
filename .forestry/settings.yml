@@ -4,17 +4,16 @@ auto_deploy: false
 admin_path: _admin
 webhook_url: 
 sections:
+- type: document
+  path: ramblings.html
+  label: Ramblings
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
 - type: jekyll-posts
   label: Posts
   create: all
-- type: directory
-  path: _ramblings
-  label: Ramblings
-  create: all
-  match: "**/*"
 - type: directory
   path: _projects
   label: Projects
@@ -28,6 +27,11 @@ sections:
 - type: directory
   path: _experiences
   label: Experiences
+  create: all
+  match: "**/*"
+- type: directory
+  path: _ramblings
+  label: "[Unconfigured] Other Ramblings"
   create: all
   match: "**/*"
 upload_dir: img
