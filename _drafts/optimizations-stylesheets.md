@@ -5,8 +5,9 @@ title: 'Web Optiminization: Welcome to the CSS Butchery'
 catalog: true
 comments: true
 tags:
+- CSS
 - Guides
-- Optiminizations
+- Web Optiminization
 header-style: text
 header-img: "/img/boot.png"
 header-hide-desc: false
