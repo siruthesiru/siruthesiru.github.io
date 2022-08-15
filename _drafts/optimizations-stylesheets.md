@@ -31,8 +31,6 @@ This impact may come in many forms but the most noticeable one that I've encount
 
 ## Sass Imports
 
-## 
-
 ## Per-Page CSS
 
 ## Dealing With Fonts
