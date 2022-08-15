@@ -271,15 +271,17 @@
   @media (max-width: $MQSmall) {
     margin-top: 50px;
     border-bottom: none;
-    width: 100%;
+    width: 100vw;
     padding: 0 0 0 0;
+    overflow: hidden;
+    min-width: 0;
     > a {
       width: 90vw;
       height: auto;
-      margin: 0 0 0 25px;
+      margin: 0 0 0 5vw;
     }
     .cover{
-      width: 90vw;
+      width: 100vw;
       height: auto;
       margin: 0 0 0 0;
     }
