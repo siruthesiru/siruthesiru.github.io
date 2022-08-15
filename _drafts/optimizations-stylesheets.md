@@ -14,8 +14,10 @@ chart: false
 mermaid: false
 
 ---
+
+> _No, I did not misspell optiminization. It's a_ [_portmanteau_](https://www.merriam-webster.com/thesaurus/portmanteau) _of optimization and mini. You read the introductory article here._
+
 ![A boot](img/boot.png)
-> No, I didn't misspell it. It's a [portmanteau](https://www.merriam-webster.com/thesaurus/portmanteau) of optimization and mini. You read the introductory article here.
 
 In this slice of [rice](https://thatnixguy.github.io/posts/ricing/), we'll be setting our sightballs on making sure our CSS (Cascading Style Sheets) or other style-related files are as **tiny yet functional** as they can possibly be.
 
