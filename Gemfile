@@ -10,7 +10,7 @@ gem "parser", "~> 3.1"
 gem "jekyll", "~> 4.2"
 # gem "jekyll"
 
-gem "jekyll-katex"
+# gem "jekyll-katex"
 
 gem "http_parser.rb", "~>0.8"
 

@@ -73,7 +73,7 @@ defaults:
       chart: false
       mermaid: false
       pinned: false
-      header-mask: rgba(0, 0, 0, 0.4)
+      header-mask: rgba(0, 0, 0, 0)
 
 include:
   - _ramblings
@@ -111,7 +111,6 @@ anchorjs: false # if you want to customize anchor. check out `anchor.html`
 # you have to `bundle config set path 'vendor/bundle' && bundle install` before local preview
 plugins:
   - jekyll-paginate
-  - jemoji
   - katex
 
 # Markdown settings
