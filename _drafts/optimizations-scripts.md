@@ -1,16 +1,18 @@
 ---
 title: 'Web Optiminization: Javascript'
-layout: ''
+layout: post
 subtitle: ''
 header-img: ''
-header-style: ''
+header-style: text
 header-hide-desc: false
-catalog: false
+catalog: true
 katex: false
 chart: false
 mermaid: false
-comments: false
-tags: []
+comments: true
+tags:
+- Javascript
+- Web Optiminization
 
 ---
 Optimizing your application's Javascript impact isn't always as simple as just keeping the files as small as possible like we did for CSS. 
