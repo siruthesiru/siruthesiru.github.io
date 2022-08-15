@@ -1,7 +1,7 @@
 ---
 layout: post
 subtitle: Giving a whole new meaning to minimal design!
-title: 'Optiminizations: Welcome to the CSS Butchery'
+title: 'Web Optiminization: Welcome to the CSS Butchery'
 catalog: true
 comments: true
 tags:
