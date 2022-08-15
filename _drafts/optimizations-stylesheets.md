@@ -5,6 +5,7 @@ title: 'Optiminizations: Welcome to the CSS Butchery'
 catalog: true
 comments: true
 tags:
+- Guides
 - Optiminizations
 header-style: text
 header-img: "/img/boot.png"
@@ -14,7 +15,6 @@ chart: false
 mermaid: false
 
 ---
-
 > _No, I did not misspell optiminization. It's a_ [_portmanteau_](https://www.merriam-webster.com/thesaurus/portmanteau) _of optimization and mini. You read the introductory article here._
 
 ![A boot](img/boot.png)
@@ -28,3 +28,23 @@ And in order to do so, we'll be stomping on those files' necks with the proverbi
 Well you see, my humble reader that totally exists: **the smaller your stylesheets are, the lesser their negative impact on your browser-based application's load times**. The same goes with script files as well.
 
 This impact may come in many forms but the most noticeable one that I've encountered through my web development journey is **render blocking**.
+
+## Sass Imports
+
+## 
+
+## Per-Page CSS
+
+## Dealing With Fonts
+
+### Converting to woff2
+
+### Editing fonts with FontForge
+
+## Minifying CSS
+
+### CSSTidy
+
+### Minify Tools
+
+## Inline CSS
