@@ -14,6 +14,8 @@ gem "jekyll-katex"
 
 gem "katex"
 
+gem "execjs"
+
 gem 'therubyracer'
 
 gem 'rack-cors'
