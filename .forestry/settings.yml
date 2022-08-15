@@ -42,7 +42,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
-  install_dependencies_command: bundle install --path vendor/bundle
+  install_dependencies_command: bundle install
   preview_docker_image: ruby:3.0-slim-buster
   mount_path: "/srv"
   working_dir: "/srv"
