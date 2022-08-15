@@ -44,7 +44,7 @@ build:
   preview_output_directory: _site
   install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: jekyll/builder:stable
-  mount_path: "/srv"
-  working_dir: "/srv"
+  mount_path: "/srv/jekyll"
+  working_dir: "/srv/jekyll"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     -d _site
