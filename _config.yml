@@ -96,7 +96,7 @@ exclude:
   - LICENSE
   - Gruntfile.js
   - Gemfile
-  - Gemfile.lock
+  - Gemfile.lock.backup
   - /node_modules
   - global
   - vendor
