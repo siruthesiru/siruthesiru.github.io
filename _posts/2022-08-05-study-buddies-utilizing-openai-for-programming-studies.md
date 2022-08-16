@@ -14,15 +14,14 @@ tags:
 - Study Buddies
 
 ---
-Some feller in a "Ways To Help You Study" video on the tube would probably tell you about tools that they wish they knew
-about when they were learning about stuff.
+Some fella in some "Ways To Help You Study" video on the tube would probably tell you something about tools that they wish they knew about when they were learning about stuff.
 
 Fortunately for me, I found about this little study buddy smack-dab in the middle of my college "career" and fortunately
 for you I've written this piece for you (this refers to all readers not you specifically, you narcissist)!
 
 ## What The Digital Hell Is This?
 
-Notice how I used name case for the header for inclusiveness? In all seriousness, as stated [OpenAI's Playground's documentation](https://beta.openai.com/docs/introduction):
+As stated OpenAI's Playground's [documentation](https://beta.openai.com/docs/introduction):
 
 > The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code.
 > We offer a spectrum of models with different levels of power suitable for different tasks, as well as the ability to
@@ -102,7 +101,9 @@ And viola! You have good clean study material for linked list initialization. Of
 function and are free to try it out yourself at the [OpenAI Playground website](https://beta.openai.com/)
 (you will be required to create an account first).
 
-## Alright, So Spit Out The Catch Already!
+## Spit Out The Catch Already Or Else!
+
+What the? Stop threatening me. Jeez Louise. I was getting there.
 
 The catch is that, as expected, it doesn't always generate functional code. Since the bot is generating code based off of
 what it's learned from millions of lines of code made by humans, it is very prone to this unfortunate fact.
@@ -115,8 +116,7 @@ Other unwanted behavior I've noticed are:
 * It sometimes uses variable names from other people's code.
 * It can occasionally call functions that were never defined or provided in the instructions (especially bad when abstract
   data types).
-* It sometimes doesn't even provide code. It just tries to explain some part of your prompt unprovoked (easily fixed by
-  clicking the regenerate button).
+* It sometimes doesn't even provide code. It just tries to explain some part of your prompt unprovoked (easily fixed by tweaking your prompt a bit and clicking the regenerate button).
 
 These problems might not even be problems to the eagle-eyed veteran programmer who can easily provide solutions to them -
 but for those who are trying to use the model as a learning tool it could go unnoticed and provide incorrect material for
@@ -156,15 +156,11 @@ idea to read through it in order to figure out the best practices for providing 
 
 ### Keep Using It
 
-Another, more fun way to figure out its best practices and limitations is to use the tool yourself - practicing in a way.
-Every time you encounter an error you can either figure out a way to solve it or go the other direction and learn how to
-avoid the wrong answers completely.
+Another, more fun way to figure out its best practices and limitations is to use the tool yourself - practicing in a way. Every time you encounter an error you can either figure out a way to solve it and regenerate the code or go the other direction and learn how to avoid the wrong answers completely.
 
 ## Conclusion
 
-The OpenAI Playground should in no way be seen as the end-all-be-all for obtaining study material for your pathway to
-perfect programming but it should definitely be in consideration if you need a quick and simple way to get at least an
-idea of how to implement a certain algorithm you have in mind.
+The OpenAI Playground should in no way be seen as the end-all-be-all for obtaining study material for your pathway to perfect programming but it should certainly be an option if you need a quick and simple way to get at least an idea of how to implement some specific algorithm you have in mind.
 
 As long as you prepare for the potential hundreds of regeneration attempts you'll have with it,
 [OpenAI Playground](https://beta.openai.com/playground) could most definitely be one of, if not your favorite, study buddies.
