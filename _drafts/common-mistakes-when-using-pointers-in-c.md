@@ -1,5 +1,5 @@
 ---
-title: Common Mistakes When Using Pointers (in C)
+title: Common Mistakes With Pointers (in C)
 layout: post
 subtitle: A few notes from past me.
 header-img: ''
